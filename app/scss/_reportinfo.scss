@@ -1,0 +1,46 @@
+.reportinfo {
+	padding: 100px 0;
+	&__content {
+		&-title {
+			display: flex;
+			flex-direction: column;
+			font-size: 20px;
+			line-height: 27px;
+			max-width: 311px;
+			span {
+				font-family: 'Lora';
+				font-weight: 500;
+				font-size: 100px;
+				line-height: 103%;
+				color: $pink;
+			}
+		}
+		&-text {
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+		}
+	}
+}
+@media screen and (max-width: 992px) {
+	.reportinfo {
+		&__content {
+			&-title {
+				display: flex;
+				flex-direction: column;
+				font-size: 18px;
+				line-height: 22px;
+				max-width: 311px;
+				span {
+					font-size: 80px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.reportinfo {
+		padding: 50px 0;
+	}
+}

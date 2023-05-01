@@ -1,0 +1,545 @@
+.statistics {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	margin-bottom: 73px;
+	gap: 25px;
+	&__content {
+		display: flex;
+		align-items: center;
+		gap: 133px;
+		&-info {
+			display: flex;
+			flex-direction: column;
+			gap: 40px;
+			min-width: 311px;
+		}
+		&-title {
+			font-family: 'Lora';
+			font-weight: 500;
+			font-size: 100px;
+			line-height: 103%;
+			&_pink {
+				color: $pink;
+			}
+			&_orange {
+				color: $orange;
+			}
+		}
+	}
+	&__map{
+		width: 1014px;
+		height: 554px;
+		position: relative;
+		z-index: 4;
+	}
+	&__block{
+		position: relative;
+	}
+	&__review{
+		position: absolute;
+		inset: 0;
+		&-avatar{
+			position: relative;
+			z-index: 4;
+			border-radius: 50%;
+			background: transparent;
+		}
+		&-item{
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+		}
+		&-comment{
+			position: absolute;
+			display: none;
+			top: -115px;
+			left: -137px;
+			&-wrapper{
+				width: 303px;
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				gap: 17px;
+				padding: 15px;
+				background: $white;
+				box-shadow: 0px 4px 30px rgba(71, 10, 39, 0.1);
+				z-index: 30;
+				&::before{
+					content: '';
+					position: absolute;
+					z-index: 30;
+					bottom: -7%;
+					left: 45%;
+					border-bottom: 30px solid $white;
+					border-right: 30px solid transparent;
+					transform: rotate(-45deg);
+					box-shadow: 0px 4px 30px rgba(71, 10, 39, 0.1);
+				}
+			}
+		}
+		&-name{
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 100%;
+		}
+		&-location{
+			font-size: 14px;
+			line-height: 100%;
+			color: $grey;
+		}
+		&-text{
+			display: flex;
+			align-items: center;
+			gap: 7px;
+		}
+		&-icon{
+			width: 17px;
+			height: 17px;
+		}
+		&-description{
+			font-size: 14px;
+			line-height: 125%;
+		}
+	}
+}
+.statistics__review-comment-active{
+	display: block;
+}
+.map_oblast{
+		fill: $white;
+		stroke: $lightPink;
+}
+.statistics__map path{
+	&:hover{
+		fill: $mapColor;
+	}
+}
+
+.person-one{
+	position: absolute;
+	bottom: 120px;
+	left: 170px;
+}
+.person-two{
+	position: absolute;
+	top: 210px;
+	left: 90px;
+}
+.person-three{
+	position: absolute;
+	top: 220px;
+	left: 330px;
+}
+
+.person-four{
+	position: absolute;
+	bottom: 170px;
+	left: 400px;
+}
+.person-five{
+	position: absolute;
+	bottom: 70px;
+	left: 535px;
+}
+.person-six{
+	position: absolute;
+	bottom: 230px;
+	left: 535px;
+}
+.person-seven{
+	position: absolute;
+	bottom: 280px;
+	left: 605px;
+}
+.person-eight{
+	position: absolute;
+	top: 280px;
+	right: 305px;
+}
+.person-nine{
+	position: absolute;
+	top: 400px;
+	right: 325px;
+}
+.person-ten{
+	position: absolute;
+	top: 370px;
+	right: 235px;
+}
+.person-eleven{
+	position: absolute;
+	top: 240px;
+	right: 135px;
+}
+.person-twelve{
+	position: absolute;
+	top: 120px;
+	right: 255px;
+}
+
+.person-thirteen{
+	position: absolute;
+	top: 130px;
+	right: 365px;
+}
+.person-fourteen{
+	position: absolute;
+	top: 150px;
+	right: 455px;
+}
+.person-fifteen{
+	position: absolute;
+	top: 40px;
+	right: 455px;
+}
+.person-sixteen{
+	position: absolute;
+	top: 130px;
+	right: 575px;
+}
+
+@media screen and (max-width: 1650px) {
+	.statistics {
+		&__content {
+			justify-content: space-between;
+			gap: 10px;
+		}
+	}
+}
+
+@media screen and (max-width: 1450px) {
+	.statistics {
+		&__content {
+			flex-direction: column;
+			&-info{
+				flex-direction: row;
+			}
+			&-description{
+				max-width: 290px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1050px) {
+	.statistics {
+		&__map {
+			width: 814px;
+		}
+	}
+	.person-one{
+		position: absolute;
+		bottom: 150px;
+		left: 140px;
+	}
+	.person-three{
+		position: absolute;
+		top: 240px;
+		left: 270px;
+	}
+
+	.person-four{
+		position: absolute;
+		bottom: 190px;
+		left: 320px;
+	}
+	.person-five{
+		position: absolute;
+		bottom: 110px;
+		left: 425px;
+	}
+	.person-six{
+		position: absolute;
+		bottom: 240px;
+		left: 435px;
+	}
+	.person-seven{
+		position: absolute;
+		bottom: 280px;
+		left: 485px;
+	}
+	.person-eight{
+		position: absolute;
+		top: 280px;
+		right: 235px;
+	}
+	.person-nine{
+		position: absolute;
+		top: 370px;
+		right: 265px;
+	}
+	.person-ten{
+		position: absolute;
+		top: 350px;
+		right: 185px;
+	}
+	.person-eleven{
+		position: absolute;
+		top: 240px;
+		right: 105px;
+	}
+	.person-twelve{
+		position: absolute;
+		top: 150px;
+		right: 205px;
+	}
+
+	.person-thirteen{
+		position: absolute;
+		top: 155px;
+		right: 285px;
+	}
+	.person-fourteen{
+		position: absolute;
+		top: 170px;
+		right: 365px;
+	}
+	.person-fifteen{
+		position: absolute;
+		top: 90px;
+		right: 365px;
+	}
+	.person-sixteen{
+		position: absolute;
+		top: 150px;
+		right: 455px;
+	}
+}
+@media screen and (max-width: 840px) {
+	.statistics {
+		margin-bottom: 0;
+		&__map {
+			width: 614px;
+		}
+		&__content{
+			&-title{
+				font-size: 70px;
+			}
+			&-description{
+				font-size: 17px;
+			}
+		}
+		&__review{
+			&-name{
+				font-size: 13px;
+			}
+			&-location{
+				font-size: 11px;
+			}
+			&-description{
+				font-size: 12px;
+			}
+			&-comment{
+				left: -115px;
+				&-wrapper{
+					width: 250px;
+				}
+			}
+		}
+	}
+	.person-one{
+		position: absolute;
+		bottom: 180px;
+		left: 100px;
+	}
+	.person-two{
+		position: absolute;
+		top: 220px;
+		left: 70px;
+	}
+	.person-three{
+		position: absolute;
+		top: 240px;
+		left: 190px;
+	}
+
+	.person-four{
+		position: absolute;
+		bottom: 210px;
+		left: 230px;
+	}
+	.person-five{
+		position: absolute;
+		bottom: 155px;
+		left: 315px;
+	}
+	.person-six{
+		position: absolute;
+		bottom: 245px;
+		left: 320px;
+	}
+	.person-seven{
+		position: absolute;
+		bottom: 275px;
+		left: 355px;
+	}
+	.person-eight{
+		position: absolute;
+		top: 270px;
+		right: 175px;
+	}
+	.person-nine{
+		position: absolute;
+		top: 340px;
+		right: 195px;
+	}
+	.person-ten{
+		position: absolute;
+		top: 330px;
+		right: 135px;
+	}
+	.person-eleven{
+		position: absolute;
+		top: 250px;
+		right: 85px;
+	}
+	.person-twelve{
+		position: absolute;
+		top: 180px;
+		right: 155px;
+	}
+
+	.person-thirteen{
+		position: absolute;
+		top: 180px;
+		right: 215px;
+	}
+	.person-fourteen{
+		position: absolute;
+		top: 190px;
+		right: 280px;
+	}
+	.person-fifteen{
+		position: absolute;
+		top: 130px;
+		right: 265px;
+	}
+	.person-sixteen{
+		position: absolute;
+		top: 190px;
+		right: 335px;
+	}
+}
+@media screen and (max-width: 640px) {
+	.statistics {
+		&__map {
+			width: 100%;
+			height: 300px;
+		}
+		&__content{
+			&-title{
+				font-size: 50px;
+			}
+			&-description{
+				max-width: 180px;
+				font-size: 14px;
+			}
+		}
+	}
+	.person-one{
+		position: absolute;
+		bottom: 165px;
+		left: 30px;
+	}
+	.person-two{
+		position: absolute;
+		top: 190px;
+		left: 60px;
+	}
+	.person-three{
+		position: absolute;
+		top: 130px;
+		left: 100px;
+	}
+
+	.person-four{
+		position: absolute;
+		bottom: 107px;
+		left: 140px;
+	}
+	.person-five{
+		position: absolute;
+		bottom: 78px;
+		left: 190px;
+	}
+	.person-six{
+		position: absolute;
+		bottom: 130px;
+		left: 185px;
+	}
+	.person-seven{
+		position: absolute;
+		bottom: 145px;
+		left: 220px;
+	}
+	.person-eight{
+		position: absolute;
+		top: 135px;
+		right: 100px;
+	}
+	.person-nine{
+		position: absolute;
+		top: 180px;
+		right: 110px;
+	}
+	.person-ten{
+		position: absolute;
+		top: 180px;
+		right: 75px;
+	}
+	.person-eleven{
+		position: absolute;
+		top: 125px;
+		right: 50px;
+	}
+	.person-twelve{
+		position: absolute;
+		top: 80px;
+		right: 90px;
+	}
+
+	.person-thirteen{
+		position: absolute;
+		top: 87px;
+		right: 129px;
+	}
+	.person-fourteen{
+		position: absolute;
+		top: 90px;
+		right: 168px;
+	}
+	.person-fifteen{
+		position: absolute;
+		top: 50px;
+		right: 160px;
+	}
+	.person-sixteen{
+		position: absolute;
+		top: 90px;
+		right: 205px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.statistics {
+		&__content{
+			&-info{
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+				gap: 20px;
+			}
+			&-title{
+				font-size: 50px;
+			}
+			&-description{
+				max-width: 180px;
+				font-size: 14px;
+			}
+		}
+	}
+}

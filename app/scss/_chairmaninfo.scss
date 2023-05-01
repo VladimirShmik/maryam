@@ -1,0 +1,104 @@
+.chairmaninfo {
+	padding: 53px 0;
+	background: $secondWhite;
+	border-radius: 30px;
+	position: relative;
+	&-blur {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 332px;
+		height: 332px;
+		background: #ff990a;
+		opacity: 0.2;
+		filter: blur(202px);
+	}
+	&__block {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		max-width: 640px;
+	}
+	&__about {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		&-name {
+			font-family: 'Lora';
+			font-weight: 500;
+			font-size: 48px;
+			line-height: 110%;
+		}
+		&-jobtitle {
+			font-weight: 600;
+			font-size: 25px;
+			line-height: 34px;
+		}
+	}
+}
+
+@media screen and (max-width: 1110px) {
+	.chairmaninfo {
+		&__content {
+			max-width: 440px;
+		}
+		&__about {
+			&-name {
+				font-size: 42px;
+			}
+			&-jobtitle {
+				font-size: 20px;
+				line-height: 29px;
+			}
+			&-text {
+				font-size: 18px;
+				line-height: 24px;
+			}
+		}
+		&__img {
+			width: 350px;
+			height: 350px;
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.chairmaninfo {
+		&__block {
+			flex-direction: column;
+			gap: 20px;
+		}
+		&__content {
+			max-width: 640px;
+		}
+	}
+}
+@media screen and (max-width: 576px) {
+	.chairmaninfo {
+		&__content {
+			max-width: 440px;
+			gap: 20px;
+		}
+		&__about {
+			&-name {
+				font-size: 38px;
+			}
+			&-jobtitle {
+				font-size: 18px;
+				line-height: 26px;
+			}
+			&-text {
+				font-size: 16px;
+				line-height: 20px;
+			}
+		}
+		&__img {
+			width: 320px;
+			height: 320px;
+		}
+	}
+}

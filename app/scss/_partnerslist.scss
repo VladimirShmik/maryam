@@ -1,0 +1,159 @@
+.partnerslist {
+	border-radius: 30px;
+	padding: 80px 0;
+	background: $secondWhite;
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+	}
+	&__block {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	&__item {
+		width: 420px;
+		border-radius: 10px;
+		background: $white;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		padding: 20px;
+		&:hover {
+			filter: drop-shadow(0px 4px 30px rgba(51, 36, 36, 0.1));
+			.partnerslist__item-link {
+				display: flex;
+			}
+			.partnerslist__item-title {
+				text-decoration: underline;
+			}
+		}
+		&-title {
+			font-weight: 600;
+			font-size: 25px;
+			line-height: 120%;
+		}
+		&-about {
+			font-size: 16px;
+			line-height: 120%;
+		}
+		&-link {
+			display: none;
+			align-items: center;
+			gap: 10px;
+			&-text {
+				font-weight: 700;
+				color: $mainColor;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1350px) {
+	.partnerslist {
+		&__item {
+			width: 320px;
+			&-link {
+				&-text {
+					font-size: 18px;
+					line-height: 20px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1050px) {
+	.partnerslist {
+		&__item {
+			width: 260px;
+			&-title {
+				font-size: 20px;
+			}
+			&-about {
+				font-size: 14px;
+			}
+			&-link {
+				gap: 0;
+				justify-content: space-between;
+				&-text {
+					font-size: 14px;
+					line-height: 18px;
+				}
+				&-icon {
+					width: 15px;
+					height: 15px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 876px) {
+	.partnerslist {
+		&__item {
+			width: 220px;
+			&-title {
+				font-size: 16px;
+			}
+			&-about {
+				font-size: 12px;
+			}
+			&-link {
+				&-text {
+					font-size: 11px;
+					line-height: 16px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 756px) {
+	.partnerslist {
+		padding: 40px 0;
+		&__content {
+			flex-direction: column;
+		}
+		&__item {
+			width: 360px;
+			&-title {
+				font-size: 25px;
+			}
+			&-about {
+				font-size: 16px;
+			}
+			&-link {
+				&-text {
+					font-size: 20px;
+					line-height: 27px;
+				}
+				&-icon {
+					width: 21px;
+					height: 21px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 480px) {
+	.partnerslist {
+		&__item {
+			width: 300px;
+			&-title {
+				font-size: 22px;
+			}
+			&-about {
+				font-size: 14px;
+			}
+			&-link {
+				&-text {
+					font-size: 16px;
+					line-height: 20px;
+				}
+				&-icon {
+					width: 15px;
+					height: 16px;
+				}
+			}
+		}
+	}
+}

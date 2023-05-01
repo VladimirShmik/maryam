@@ -1,0 +1,22 @@
+.famousreviews {
+	position: relative;
+	padding: 100px 0;
+	background: $secondWhite;
+	overflow: hidden;
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: 1;
+		bottom: -250px;
+		left: -150px;
+		width: 675px;
+		height: 675px;
+		background: $pink;
+		opacity: 0.1;
+		filter: blur(202px);
+	}
+	&__block {
+		position: relative;
+		z-index: 4;
+	}
+}

@@ -1,0 +1,199 @@
+.helplist {
+	padding: 100px 0;
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 65px;
+	}
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 165px;
+	}
+	&__title {
+		font-family: 'Lora';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 48px;
+		line-height: 110%;
+	}
+	&__block {
+		display: flex;
+		align-items: center;
+		gap: 165px;
+	}
+	&__table {
+		display: flex;
+		flex-direction: column;
+		gap: 22px;
+		&-item {
+			display: flex;
+			align-items: center;
+			gap: 24px;
+		}
+		&-name {
+			font-weight: 700;
+		}
+	}
+	&__reviews {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		&-item {
+			width: 420px;
+			height: 279px;
+			padding: 30px;
+			border-radius: 10px;
+			background: $secondWhite;
+			display: flex;
+			flex-direction: column;
+			gap: 29px;
+		}
+		&-avatar {
+			width: 50px;
+			height: 50px;
+		}
+		&-info {
+			display: flex;
+			flex-direction: column;
+			gap: 5px;
+		}
+		&-box {
+			display: flex;
+			align-items: center;
+			gap: 15px;
+		}
+		&-number {
+			font-size: 16px;
+			line-height: 120%;
+		}
+		&-name {
+			font-weight: 700;
+		}
+		&-text {
+			font-size: 16px;
+			line-height: 120%;
+		}
+		&-link {
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 100%;
+			color: $pink;
+		}
+	}
+	&__button {
+		padding: 22px 0;
+		background: $secondWhite;
+		border-radius: 10px;
+		font-size: 20px;
+		line-height: 27px;
+	}
+}
+@media screen and (max-width: 1350px) {
+	.helplist {
+		&__block {
+			gap: 0;
+			justify-content: space-between;
+		}
+		&__table {
+			&-item {
+				font-size: 15px;
+				line-height: 22px;
+			}
+		}
+		&__list {
+			gap: 105px;
+		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.helplist {
+		padding: 50px 0;
+		&__block {
+			flex-direction: column;
+			gap: 30px;
+			justify-content: center;
+		}
+		&__table {
+			&-item {
+				font-size: 20px;
+				line-height: 27px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.helplist {
+		&__table {
+			&-item {
+				font-size: 15px;
+				line-height: 22px;
+			}
+		}
+		&__list {
+			gap: 55px;
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.helplist {
+		&__table {
+			&-item {
+				font-size: 17px;
+				line-height: 24px;
+			}
+		}
+		&__list {
+			flex-direction: column;
+			gap: 20px;
+		}
+		&__reviews {
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+			&-item {
+				width: 320px;
+				height: 100%;
+				padding: 30px;
+				border-radius: 10px;
+				background: $secondWhite;
+				display: flex;
+				flex-direction: column;
+				gap: 29px;
+			}
+			&-avatar {
+				width: 50px;
+				height: 50px;
+			}
+			&-info {
+				display: flex;
+				flex-direction: column;
+				gap: 5px;
+			}
+			&-box {
+				display: flex;
+				align-items: center;
+				gap: 15px;
+			}
+			&-number {
+				font-size: 16px;
+				line-height: 120%;
+			}
+			&-name {
+				font-weight: 700;
+			}
+			&-text {
+				font-size: 16px;
+				line-height: 120%;
+			}
+			&-link {
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 100%;
+				color: $pink;
+			}
+		}
+	}
+}
