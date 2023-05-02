@@ -10,13 +10,16 @@
 .donation {
 	position: absolute;
 	left: 0;
-	bottom: -20%;
+	bottom: -10%;
 	right: 0;
+	@media (min-width: 1440px) and (max-width: 1241px){
+		bottom: -10%;
+	}
 	@media (min-width: 1024px) and (max-width: 1240px) {
-		bottom: -35%;
+		bottom: -15%;
 	}
 	@media (min-width: 320px) and (max-width: 1023px) {
-		bottom: -55%;
+		bottom: -25%;
 	}
 	&__block {
 		padding: 40px;

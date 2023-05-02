@@ -15,10 +15,9 @@
 		padding-top: 200px;
 	}
 	&__block {
-		display: flex;
-		flex-direction: column;
-		gap: 31px;
-		transform: translateX(-20px);
+	  	display: grid;
+		grid-auto-flow: row;
+		grid-gap: 20px;
 	}
 	&__info {
 		&-title {
@@ -26,15 +25,15 @@
 			font-weight: 500;
 			font-size: 50px;
 			line-height: 110%;
-			padding-left: 15px;
 			color: $white;
 		}
 	}
 	&__breadcrumbs {
-		display: flex;
+		display: grid;
+		grid-auto-flow: column;
 		align-items: center;
-		padding-left: 15px;
-		gap: 5px;
+		grid-gap: 10px;
+		justify-content: start;
 		&-delimiter {
 			color: $white;
 		}
@@ -46,9 +45,8 @@
 	}
 	&__buttons {
 		display: flex;
-		align-items: center;
-		padding-left: 15px;
-		gap: 7px;
+		flex-wrap: wrap;
+		grid-gap: 10px;
 		&-link {
 			font-weight: 400;
 			font-size: 16px;
@@ -100,7 +98,7 @@
 @media screen and (max-width: 1140px) {
 	.navigation {
 		&__info {
-			padding-left: 20px;
+			padding-left: 25px;
 			&-title {
 				font-size: 45px;
 			}
@@ -137,8 +135,7 @@
 	.navigation {
 		&__breadcrumbs {
 			&-link {
-				max-width: 150px;
-				font-size: 11px;
+				font-size: 12px;
 				line-height: 13px;
 			}
 		}
@@ -156,3 +153,32 @@
 		}
 	}
 }
+@media (min-width: 320px) and (max-width: 424px){
+	.navigation {
+		&__info {
+			padding-left: 0px;
+		}
+	}
+}
+@media (min-width: 320px) and (max-width: 767px){
+	.navigation__breadcrumbs-link{
+		width: 100%;
+		max-width: 180px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+}
+@media (min-width: 320px) and (max-width: 1023px) {
+	.navigation__info{
+		padding-left: 0;
+		justify-content: center;
+		text-align: center;
+	}
+	.navigation__breadcrumbs{
+		padding-left: 0;
+		justify-content: center;
+		text-align: center;
+	}
+}
+

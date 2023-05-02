@@ -4,9 +4,12 @@
 	background: $secondWhite;
 	&__content {
 		display: flex;
-		align-items: center;
+		align-items: start;
 		justify-content: center;
 		gap: 20px;
+		@media (min-width: 320px) and (max-width: 1023px){
+  	align-items: center;
+		}
 	}
 	&__block {
 		display: flex;

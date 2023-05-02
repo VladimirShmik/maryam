@@ -1,5 +1,11 @@
 .shortdonation {
 	transform: translateY(-60px);
+	&--static{
+		@media (min-width: 320px) and (max-width: 1023px) {
+			transform: none;
+		}
+
+	}
 	&__block {
 		width: 100%;
 		height: auto;

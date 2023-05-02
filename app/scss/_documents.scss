@@ -10,6 +10,7 @@
 		position: relative;
 		z-index: 10;
 		width: 100%;
+		max-width: 450px;
 		height: 490px;
 		background: transparent;
 		display: flex;
@@ -100,7 +101,7 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
 		justify-content: center;
-		grid-gap: 40px;
+		grid-gap: 80px 40px;
 		@media (min-width: 320px) and (max-width: 1023px) {
 			width: 100%;
 			grid-gap: 60px;

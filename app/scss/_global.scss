@@ -16,9 +16,9 @@ body {
 }
 
 .container {
-	max-width: 1329px;
+	max-width: 1330px;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 0 1rem;
 }
 .button {
 	padding: 11px 24px;
@@ -81,17 +81,44 @@ body {
 }
 .info {
 	&__content {
-		display: flex;
+		display: grid;
+		grid-auto-flow: column;
 		justify-content: space-between;
+		@media (min-width: 320px) and (max-width: 1023px) {
+		 grid-auto-flow: row;
+			grid-gap: 20px;
+			justify-content: center;
+
+
+		}
+		&--grid{
+			@media (min-width: 320px) and (max-width: 1240px) {
+				grid-auto-flow: row;
+				grid-gap: 20px;
+				justify-content: center;
+
+
+			}
+		}
 		&-title {
 			font-family: 'Lora';
 			font-weight: 500;
 			font-size: 48px;
 			line-height: 110%;
 			max-width: 540px;
+			@media (min-width: 320px) and (max-width: 1023px) {
+				font-size: 34px;
+
+			}
 		}
 		&-info {
+			display: grid;
+			grid-auto-flow: row;
+			grid-gap: 20px;
 			max-width: 640px;
+			&--text{
+				display: block;
+			}
 			span {
 				color: $pink;
 			}
@@ -123,6 +150,7 @@ body {
 			font-size: 48px;
 			line-height: 110%;
 			max-width: 540px;
+
 		}
 		&-info {
 			max-width: 640px;
@@ -216,38 +244,6 @@ body {
 		}
 	}
 }
-@media screen and (max-width: 1200px) {
-	.info {
-		&__content {
-			&-title {
-				font-size: 42px;
-			}
-			&-info {
-				// max-width: 440px;
-				font-size: 18px;
-				line-height: 25px;
-			}
-		}
-	}
-}
-@media screen and (max-width: 992px) {
-	.info {
-		&__content {
-			flex-direction: column;
-			gap: 20px;
-			align-items: center;
-			&-title {
-				max-width: 640px;
-				font-size: 48px;
-			}
-			&-info {
-				max-width: 640px;
-				font-size: 20px;
-				line-height: 27px;
-			}
-		}
-	}
-}
 @media screen and (max-width: 768px) {
 	.btn {
 		font-size: 14px;
@@ -261,18 +257,6 @@ body {
 		}
 		&-label {
 			transform: translateX(30px);
-		}
-	}
-	.info {
-		&__content {
-			&-title {
-				font-size: 42px;
-			}
-			&-info {
-				max-width: 540px;
-				font-size: 18px;
-				line-height: 25px;
-			}
 		}
 	}
 }
@@ -302,46 +286,4 @@ body {
 		}
 	}
 }
-@import './header';
-@import './firstscreen';
-@import './donation';
-@import './about';
-@import './statistics';
-@import './reviews';
-@import './partners';
-@import './stars';
-@import './footer';
-@import './popup';
-@import './navigation';
-@import './fundabout';
-@import './quotes';
-@import './position';
-@import './documents';
-@import './chairmaninfo';
-@import './education';
-@import './cleaning';
-@import './experience';
-@import './awards';
-@import './employees';
-@import './starpage';
-@import './council';
-@import './corpinfo';
-@import './corpnews';
-@import './ourpartners';
-@import './famousreviews';
-@import './membership';
-@import './rewards';
-@import './advantages';
-@import './shortdonation';
-@import './fundpartners';
-@import './partnerslist';
-@import './news';
-@import './contacts';
-@import './reports';
-@import './reportinfo';
-@import './helplist';
-@import './allreports';
-@import './projects';
-@import './charityinfo';
-@import './projectpage';
-@import './application';
+
