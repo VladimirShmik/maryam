@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/images/favicon/apple-touch-icon.png"
+    />
+    <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/images/favicon/favicon-16x16.png"
+    />
+    <title>Благотворительный фонд «MARYAM»</title>
+    <link rel="stylesheet" href="scss/style.css"/>
+</head>
+<body>
+    <!--overlay-->
+    <div class="overlay">
+        <div id="popup" class="popup">
+            <div class="popup__block">
+                <button class="popup__closebtn"></button>
+                <div class="popup__nav">
+                    <div class="popup__nav-item">
+                        <div class="popup__nav-title">О фонде</div>
+                        <div class="popup__nav-list">
+                            <a class="popup__nav-link" href="about.html">О фонде</a>
+                            <a class="popup__nav-link" href="#1">Председатель совета</a>
+                            <a class="popup__nav-link" href="#1">Сотрудники</a>
+                            <a class="popup__nav-link" href="#1">Звезды</a>
+                            <a class="popup__nav-link" href="#1">Попечительский совет</a>
+                            <a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
+                            <a class="popup__nav-link" href="#1">Частный клуб</a>
+                            <a class="popup__nav-link" href="#1">Частные партнеры</a>
+                        </div>
+                    </div>
+                    <div class="popup__nav-item">
+                        <div class="popup__nav-title">Новости фонда</div>
+                        <div class="popup__nav-list">
+                            <a class="popup__nav-link" href="#">Новости фонда</a>
+                            <a class="popup__nav-link" href="#1">Председатель совета</a>
+                            <a class="popup__nav-link" href="#1">Сотрудники</a>
+                            <a class="popup__nav-link" href="#1">Звезды</a>
+                            <a class="popup__nav-link" href="#1">Попечительский совет</a>
+                            <a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
+                            <a class="popup__nav-link" href="#1">Частный клуб</a>
+                            <a class="popup__nav-link" href="#1">Частные партнеры</a>
+                        </div>
+                    </div>
+                    <div class="popup__nav-item">
+                        <div class="popup__nav-title">Отчеты</div>
+                        <div class="popup__nav-list">
+                            <a class="popup__nav-link" href="#">Отчеты</a>
+                            <a class="popup__nav-link" href="#1">Председатель совета</a>
+                            <a class="popup__nav-link" href="#1">Сотрудники</a>
+                            <a class="popup__nav-link" href="#1">Звезды</a>
+                            <a class="popup__nav-link" href="#1">Попечительский совет</a>
+                            <a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
+                            <a class="popup__nav-link" href="#1">Частный клуб</a>
+                            <a class="popup__nav-link" href="#1">Частные партнеры</a>
+                        </div>
+                    </div>
+                    <div class="popup__nav-item">
+                        <div class="popup__nav-title">Жизнь фонда</div>
+                        <div class="popup__nav-list">
+                            <a class="popup__nav-link" href="#">Жизнь фонда</a>
+                            <a class="popup__nav-link" href="#1">Председатель совета</a>
+                            <a class="popup__nav-link" href="#1">Сотрудники</a>
+                            <a class="popup__nav-link" href="#1">Звезды</a>
+                            <a class="popup__nav-link" href="#1">Попечительский совет</a>
+                            <a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
+                            <a class="popup__nav-link" href="#1">Частный клуб</a>
+                            <a class="popup__nav-link" href="#1">Частные партнеры</a>
+                        </div>
+                    </div>
+                    <div class="popup__nav-item">
+                        <div class="popup__nav-title">Контакты</div>
+                        <div class="popup__nav-list">
+                            <a class="popup__nav-link" href="#">Контакты</a>
+                            <a class="popup__nav-link" href="#1">Председатель совета</a>
+                            <a class="popup__nav-link" href="#1">Сотрудники</a>
+                            <a class="popup__nav-link" href="#1">Звезды</a>
+                            <a class="popup__nav-link" href="#1">Попечительский совет</a>
+                            <a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
+                            <a class="popup__nav-link" href="#1">Частный клуб</a>
+                            <a class="popup__nav-link" href="#1">Частные партнеры</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__buttons">
+                    <a class="button button_pink" href="#">Хочу помочь</a>
+                    <a class="button button_olive" href="#">Нужна помощь</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--header-->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__content">
+                    <a class="logo" href="index.html"
+                    ><img
+                            class="logo__img"
+                            src="./assets/images/main-logo.png"
+                            alt="Logo"
+                    /></a>
+                    <div class="header__block">
+                        <nav class="header__nav">
+                            <ul class="header__nav-list">
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="about.html">О фонде</a>
+                                    <ul class="header__nav-submenu">
+                                        <li class="header__nav-submenu-item">
+                                            <a class="header__nav-submenu-link" href="chairman.html"
+                                            >Председатель совета</a
+                                            >
+                                        </li>
+                                        <li class="header__nav-submenu-item">
+                                            <a
+                                                    class="header__nav-submenu-link"
+                                                    href="employees.html"
+                                            >Сотрудники</a
+                                            >
+                                        </li>
+                                        <li class="header__nav-submenu-item">
+                                            <a class="header__nav-submenu-link" href="stars.html"
+                                            >Звезды</a
+                                            >
+                                        </li>
+                                        <li class="header__nav-submenu-item">
+                                            <a class="header__nav-submenu-link" href="council.html"
+                                            >Попечительский совет</a
+                                            >
+                                        </li>
+                                        <li class="header__nav-submenu-item">
+                                            <a class="header__nav-submenu-link" href="corporatePartners.html"
+                                            >Корпоративные партнеры</a
+                                            >
+                                        </li>
+                                        <li class="header__nav-submenu-item">
+                                            <a class="header__nav-submenu-link" href="privateclub.html"
+                                            >Частный клуб</a
+                                            >
+                                        </li>
+                                        <li class="header__nav-submenu-item">
+                                            <a class="header__nav-submenu-link" href="privatepartners.html"
+                                            >Частные партнеры</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="news.html">Новости фонда</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="reports.html">Отчеты</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="fundlife.html">Жизнь фонда</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="contacts.html"
+                                    >Контакты</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__buttons">
+                            <a class="button button_pink" href="#">Хочу помочь</a>
+                            <a class="button button_olive" href="needhelp.html"
+                            >Нужна помощь</a
+                            >
+                            <div class="header__buttons-lng">
+                                <button class="header__buttons-lng-current">RU</button>
+                                <ul class="header__buttons-list">
+                                    <li class="header__buttons-item">
+                                        <a class="header__buttons-link" href="#kz">KZ</a>
+                                    </li>
+                                    <li class="header__buttons-item">
+                                        <a class="header__buttons-link" href="#en">EN</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__burger">
+                            <div class="header__burger-btn"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--main-->
+    <main class="main">
+        <section class="navigation">
+            <div class="container">
+                <nav class="navigation__block">
+                    <div class="navigation__info">
+                        <div class="navigation__breadcrumbs">
+                            <a class="navigation__breadcrumbs-link" href="index.html"
+                            >Главная</a
+                            >
+                            <span class="navigation__breadcrumbs-delimiter">/</span>
+                            <a class="navigation__breadcrumbs-link" href="about.html"
+                            >О фонде</a
+                            >
+                        </div>
+                        <h1 class="navigation__info-title">О фонде</h1>
+                    </div>
+                    <div class="navigation__buttons">
+                        <a class="navigation__buttons-link" href="chairman.html"
+                        >Председатель совета</a
+                        >
+                        <a class="navigation__buttons-link" href="employees.html">Сотрудники</a>
+                        <a class="navigation__buttons-link" href="stars.html">Звезды</a>
+                        <a class="navigation__buttons-link" href="council.html"
+                        >Попечительский совет</a
+                        >
+                        <a class="navigation__buttons-link" href="corporatePartners.html"
+                        >Корпоративные партнеры</a
+                        >
+                        <a class="navigation__buttons-link" href="privateclub.html">Частный клуб</a>
+                        <a class="navigation__buttons-link" href="privatepartners.html">Частные партнеры</a>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <section class="fundabout">
+            <div class="container">
+                <div class="fundabout__content">
+                    <div class="fundabout__about">
+                        <h2 class="fundabout__about-title">
+                            <span>Мы помогли</span> тысячам женщин по всей Республике
+                            Казахстан
+                        </h2>
+                        <div class="fundabout__about-description">
+                            <p class="fundabout__about-text">
+                                Многие привыкли считать, что будущее — это где-то там далеко.
+                                Это мечты, планы, надежды на лучшее. Мы же, наш фонд «Линия
+                                жизни», формируем это будущее уже сейчас. Каждый день. Какое
+                                оно — наше будущее?
+                            </p>
+                            <p class="fundabout__about-text-block">
+                                        <span class="fundabout__about-text-bold"
+                                        >Это прежде всего дети!</span
+                                        >
+                                <span class="fundabout__about-text"
+                                >Мы хотим побудить людей принять участие в судьбе каждого
+                                            ребенка, на долю которого выпало серьезное испытание.</span
+                                >
+                            </p>
+                            <p class="fundabout__about-text-block">
+                                        <span class="fundabout__about-text-bold"
+                                        >Это передовые технологии и достижения новейшей науки,</span
+                                        >
+                                <span class="fundabout__about-text"
+                                >благодаря которым человек освоил просторы земли и космоса,
+                                            а сейчас технологии позволяют лечить и спасать жизни.</span
+                                >
+                            </p>
+                        </div>
+                    </div>
+                    <div class="fundabout__img">
+                        <img
+                                class="fundabout__img-frame"
+                                src="./assets/images/fund/fund-frame.png"
+                                alt=""
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="quotes">
+            <div class="container">
+                <div class="quotes__content">
+                    <div class="quotes__info">
+                        <div class="quotes__info-title">
+                            <h4 class="quotes__info-name">Жайна Султанова</h4>
+                            <p class="quotes__info-about">
+                                Председатель попечительского совета
+                            </p>
+                        </div>
+                        <p class="quotes__info-text">
+                            «Наша миссия — вдохновлять на поддержку и реализацию самых
+                            невероятных высокотехнологичных проектов, способных подарить
+                            будущее и здоровье как можно большему количеству детей.»
+                        </p>
+                    </div>
+                    <img
+                            class="quotes__img"
+                            src="./assets/images/quotes/quotes-img-1.png"
+                            alt=""
+                    />
+                </div>
+            </div>
+        </section>
+        <section class="position">
+            <div class="container">
+                <div class="position__content">
+                    <h3 class="position__title">Позиция фонда</h3>
+                    <div class="position__info">
+                        <h4 class="position__info-title">
+                            Позиция фонда «Линия жизни» — пробудить в людях желание стать
+                            участниками благотворительных проектов
+                        </h4>
+                        <p class="position__info-text">
+                            Мы не выстраиваем нашу деятельность на грустных историях, не
+                            стараемся давить на жалость. Мы стремимся привлекать средства
+                            максимально позитивно и уверены, что добрые дела должны
+                            совершаться с улыбкой на лице и хорошим настроением. Важно
+                            сделать так, чтобы у каждого, независимо от его материального
+                            положения и возраста, была возможность помочь.
+                        </p>
+                        <p class="position__info-about">
+                                    <span class="position__info-about-title"
+                                    >Это передовые технологии и достижения новейшей науки,</span
+                                    >
+                            <span class="position__info-about-text"
+                            >благодаря которым человек освоил просторы земли и космоса, а
+                                        сейчас технологии позволяют лечить и спасать жизни.</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="documents">
+            <div class="container">
+                <div class="documents__content">
+                    <h3 class="documents__title">Рабочие документы фонда</h3>
+                    <div class="documents__list">
+                        <div class="documents__item">
+                            <div class="documents__item-box">
+                                <div class="documents__item-top">
+                                    <h4 class="documents__item-type">PDF</h4>
+                                    <img
+                                            class="documents__item-logo"
+                                            src="./assets/images/main-logo.png"
+                                            alt=""
+                                    />
+                                </div>
+                                <div class="documents__item-bottom">
+                                    <h4 class="documents__item-name">Устав фонда</h4>
+                                    <div class="documents__item-actions">
+                                                <span class="documents__item-actions-title"
+                                                >Скачать документ</span
+                                                >
+                                        <a
+                                                class="documents__item-actions-link"
+                                                href="#"
+                                                download="#"
+                                                title="Скачать Устав фонда"
+                                        ><img
+                                                class="documents__item-actions-icon"
+                                                src="./assets/images/download.png"
+                                                alt=""
+                                        /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="documents__item">
+                            <div class="documents__item-box">
+                                <div class="documents__item-top">
+                                    <h4 class="documents__item-type">PDF</h4>
+                                    <img
+                                            class="documents__item-logo"
+                                            src="./assets/images/main-logo.png"
+                                            alt=""
+                                    />
+                                </div>
+                                <div class="documents__item-bottom">
+                                    <h4 class="documents__item-name">
+                                        Учредительный документ фонда
+                                    </h4>
+                                    <div class="documents__item-actions">
+                                                <span class="documents__item-actions-title"
+                                                >Скачать документ</span
+                                                >
+                                        <a
+                                                class="documents__item-actions-link"
+                                                href="#"
+                                                download="#"
+                                                title="Скачать Учредительный документ фонда"
+                                        ><img
+                                                class="documents__item-actions-icon"
+                                                src="./assets/images/download.png"
+                                                alt=""
+                                        /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="documents__item">
+                            <div class="documents__item-box">
+                                <div class="documents__item-top">
+                                    <h4 class="documents__item-type">PDF</h4>
+                                    <img
+                                            class="documents__item-logo"
+                                            src="./assets/images/main-logo.png"
+                                            alt=""
+                                    />
+                                </div>
+                                <div class="documents__item-bottom">
+                                    <h4 class="documents__item-name">
+                                        Учредительный документ фонда
+                                    </h4>
+                                    <div class="documents__item-actions">
+                                                <span class="documents__item-actions-title"
+                                                >Скачать документ</span
+                                                >
+                                        <a
+                                                class="documents__item-actions-link"
+                                                href="#"
+                                                download="#"
+                                                title="Скачать Учредительный документ фонда"
+                                        ><img
+                                                class="documents__item-actions-icon"
+                                                src="./assets/images/download.png"
+                                                alt=""
+                                        /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="shortdonation">
+            <div class="container">
+                <div class="shortdonation__block">
+                    <form class="shortdonation__form" action="#">
+                        <div class="donation__form-block">
+                            <div class="donat-block">
+                                <div class="donation__form-item">
+                                    <input
+                                            class="donation__form-input"
+                                            type="radio"
+                                            name="donate"
+                                            id="fivehundred"
+                                            value="500"
+                                    />
+                                    <label class="donation__form-label" for="fivehundred"
+                                    >500 тг</label
+                                    >
+                                </div>
+                                <div class="donation__form-item">
+                                    <input
+                                            class="donation__form-input"
+                                            type="radio"
+                                            name="donate"
+                                            id="onethousand"
+                                            value="1000"
+                                    />
+                                    <label class="donation__form-label" for="onethousand"
+                                    >1000 тг</label
+                                    >
+                                </div>
+                                <div class="donation__form-item">
+                                    <input
+                                            class="donation__form-input"
+                                            type="radio"
+                                            name="donate"
+                                            id="fivethousand"
+                                            value="5000"
+                                    />
+                                    <label class="donation__form-label" for="fivethousand"
+                                    >5000 тг</label
+                                    >
+                                </div>
+                                <div class="donation__form-item">
+                                    <input
+                                            class="donation__form-input"
+                                            type="radio"
+                                            name="donate"
+                                            id="tenthousand"
+                                            value="10000"
+                                    />
+                                    <label class="donation__form-label" for="tenthousand"
+                                    >10000 тг</label
+                                    >
+                                </div>
+                            </div>
+                            <input
+                                    class="donation__form-customdonate"
+                                    type="number"
+                                    name="donate"
+                                    id="customdonate"
+                                    placeholder="Другая сумма"
+                            />
+                        </div>
+                        <button class="shortdonation__form-btn" type="submit">
+                            <svg class="shortdonation__form-btn-icon">
+                                <use xlink:href="sprite.svg#heart"></use>
+                            </svg>
+                            Внести пожертвование
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__top">
+                    <a class="footer__top-logo" href="index.html"
+                    ><img src="./assets/images/footer-logo.png" alt=""
+                    /></a>
+                    <div class="footer__top-social">
+                        <a class="footer__top-link" href="#"
+                        >
+                            <svg class="footer__top-twitter" class="">
+                                <use xlink:href="sprite.svg#twitter"></use>
+                            </svg
+                            >
+                        </a>
+                        <a class="footer__top-link" href="#"
+                        ><img src="./assets/images/instagram.png" alt=""
+                        /></a>
+                        <a class="footer__top-btn" href="#">Напишите нам</a>
+                    </div>
+                </div>
+                <div class="footer__about">
+                    <div class="footer__about-info">
+                        <span>127006, Москва</span>
+                        <span>ул.Малая Дмитровка, д.16, стр.6</span>
+                    </div>
+                    <div class="footer__about-info">
+                        <a href="tel:+#">+7 (499) 500-14-15</a>
+                        <a href="mailto:#" class="">info@life-line.ru</a>
+                    </div>
+                    <div class="footer__about-info">
+                        <span class="footer__about-title">По программам фонда</span>
+                        <a href="tel:+#">+7 (499) 501-11-61</a>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                            <span class="footer__bottom-left"
+                            >© 2023 Благотворительный фонд «Mariyam»</span
+                            >
+                    <a class="footer__bottom-right" href="#"
+                    >Разработка сайтов <span>в Астане</span></a
+                    >
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

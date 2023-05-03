@@ -1,0 +1,103 @@
+.shortdonation {
+	transform: translateY(-60px);
+	&--static{
+		@media (min-width: 320px) and (max-width: 1023px) {
+			transform: none;
+		}
+
+	}
+	&__block {
+		width: 100%;
+		height: auto;
+		padding: 2rem;
+		background: $white;
+		box-shadow: 0px 4px 25px rgba(70, 70, 70, 0.07);
+		border-radius: 10px;
+		display: grid;
+		grid-auto-flow: column;
+		grid-gap: 20px;
+		@media (min-width: 1024px) and (max-width: 1240px) {
+			font-size: 16px;
+			padding: 1.5rem;
+		}
+		@media (min-width: 320px) and (max-width: 424px) {
+			padding: 1rem;
+
+
+		}
+	}
+	&__form {
+		display: grid;
+		grid-auto-flow: column;
+		justify-content: space-between;
+		@media (min-width: 320px) and (max-width: 1023px) {
+			grid-auto-flow: row;
+			justify-content: center;
+			justify-items: center;
+			grid-gap: 20px;
+
+
+		}
+		&-block {
+			display: flex;
+			align-items: center;
+			gap: 13px;
+		}
+
+		&-item {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+		}
+		&-input {
+			&[type='radio'] {
+				display: none;
+			}
+			&:checked {
+				+ .donation__form-label {
+					background: $pink;
+					color: $white;
+				}
+			}
+		}
+		&-label {
+			padding: 15px 25px;
+			width: 100%;
+			height: 100%;
+			background: $fourthWhite;
+			cursor: pointer;
+			border-radius: 10px;
+		}
+		&-customdonate {
+			border-radius: 10px;
+			padding: 15px 25px;
+			background: $fourthWhite;
+			font-size: 20px;
+			line-height: 27px;
+			text-align: center;
+		}
+		&-btn {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			padding: 14px 70.5px;
+			background: $pink;
+			color: $white;
+			border-radius: 10px;
+			transition: all 0.3s ease-in-out;
+			@media (min-width: 1024px) and (max-width: 1240px) {
+				font-size: 16px;
+				padding: 1.5rem;
+			}
+			&:hover {
+				border-radius: 49px;
+			}
+			&-icon {
+				width: 15px;
+				height: 13px;
+			}
+		}
+	}
+}

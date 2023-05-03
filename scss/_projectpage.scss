@@ -1,0 +1,29 @@
+.projectpage {
+	padding: 80px 0;
+
+	&__content {
+		max-width: 860px;
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		margin: 0 auto;
+	}
+	&-title {
+		font-weight: 600;
+		font-size: 25px;
+		line-height: 34px;
+	}
+	&__text {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		&-title {
+			font-weight: 600;
+			font-size: 25px;
+			line-height: 34px;
+		}
+	}
+	&-img {
+		border-radius: 10px;
+	}
+}

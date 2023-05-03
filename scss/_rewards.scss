@@ -1,0 +1,147 @@
+.rewards {
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__item {
+		width: 640px;
+		height: 200px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 30px;
+		background: $secondWhite;
+		border-radius: 10px;
+		border: 3px solid transparent;
+		border-image: linear-gradient(
+			135deg,
+			#e6ab48 14.55%,
+			#f0e0c8 26.08%,
+			#f4efe8 32.9%,
+			#e6ab48 58.51%,
+			#966521 83.64%
+		);
+		border-image-slice: 1;
+		&_silver {
+			border-image-source: linear-gradient(
+				135deg,
+				#cacbd0 14.55%,
+				#d3d4db 26.08%,
+				#f8f9fb 32.9%,
+				#979fb0 58.51%,
+				#6a707b 83.64%
+			);
+		}
+		&-title {
+			font-weight: 600;
+			font-size: 25px;
+			line-height: 34px;
+			color: #b67e30;
+			&_silver {
+				color: #707683;
+			}
+		}
+		&-description {
+			font-weight: 600;
+			font-size: 25px;
+			line-height: 34px;
+		}
+	}
+}
+
+@media screen and (max-width: 1350px) {
+	.rewards {
+		&__content {
+			justify-content: center;
+			gap: 20px;
+		}
+		&__item {
+			width: 480px;
+			&-title {
+				font-size: 21px;
+				line-height: 29px;
+			}
+		}
+	}
+	.rewards__item-decription {
+		font-size: 18px;
+		line-height: 24px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.rewards {
+		&__content {
+			justify-content: center;
+			flex-direction: column;
+			gap: 20px;
+		}
+		&__item {
+			width: 640px;
+			&-title {
+				font-size: 25px;
+				line-height: 34px;
+			}
+		}
+	}
+	.rewards__item-decription {
+		font-size: 25px;
+		line-height: 34px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.rewards {
+		&__item {
+			width: 540px;
+			height: 100px;
+			&-title {
+				font-size: 21px;
+				line-height: 29px;
+			}
+		}
+	}
+	.rewards__item-decription {
+		font-size: 18px;
+		line-height: 24px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.rewards {
+		&__item {
+			width: 400px;
+			&-img {
+				width: 60px;
+				height: 60px;
+			}
+			&-title {
+				font-size: 16px;
+				line-height: 22px;
+			}
+		}
+	}
+	.rewards__item-decription {
+		font-size: 16px;
+		line-height: 22px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.rewards {
+		&__item {
+			width: 300px;
+			&-img {
+				width: 60px;
+				height: 60px;
+			}
+			&-title {
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+	}
+	.rewards__item-decription {
+		font-size: 14px;
+		line-height: 20px;
+	}
+}

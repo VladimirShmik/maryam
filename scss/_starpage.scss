@@ -1,0 +1,57 @@
+.star {
+	padding: 100px 0;
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 110px;
+	}
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		&-title {
+			font-family: 'Lora';
+			font-weight: 500;
+			font-size: 48px;
+			line-height: 110%;
+			max-width: 540px;
+		}
+		&-info {
+			max-width: 640px;
+			span {
+				color: $pink;
+			}
+		}
+	}
+	&__block {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 63px;
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.star {
+		&__block {
+			gap: 33px;
+		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.star {
+		padding: 50px 0;
+		&__wrapper {
+			gap: 50px;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.star {
+		&__block {
+			gap: 0;
+		}
+	}
+}

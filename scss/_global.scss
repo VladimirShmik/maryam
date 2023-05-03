@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Nunito:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+
+// font-family: 'Lora', serif;
+
+body {
+	position: relative;
+	font-family: 'Nunito', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 27px;
+	color: $mainColor;
+	background: $white;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+	max-width: 1330px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+.button {
+	padding: 11px 24px;
+	border-radius: 10px;
+	color: $white;
+	transition: all 0.3s ease-in-out;
+	@media (min-width: 1024px) and (max-width: 1240px) {
+		padding: 9px;
+		font-size: 16px;
+	}
+	&:hover {
+		border-radius: 46px;
+	}
+	&_pink {
+		background: $pink;
+	}
+	&_olive {
+		background: $olive;
+	}
+}
+.main {
+	position: relative;
+}
+.btn {
+	position: fixed;
+	top: 80%;
+	right: 0;
+	z-index: 2000;
+	width: 55px;
+	height: 55px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0px 4px 25px rgba(63, 9, 35, 0.25);
+	border-radius: 50px;
+	background: $pink;
+	gap: 10px;
+	margin-right: 10px;
+	cursor: pointer;
+	transition: all 0.5s ease-out;
+	&:hover {
+		width: 391px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 14px 70px;
+		.btn-label {
+			display: flex;
+		}
+	}
+	&-icon {
+		width: 15px;
+		height: 13px;
+	}
+	&-label {
+		display: none;
+		color: $white;
+		min-width: 220px;
+	}
+}
+.info {
+	&__content {
+		display: grid;
+		grid-auto-flow: column;
+		justify-content: space-between;
+		@media (min-width: 320px) and (max-width: 1023px) {
+		 grid-auto-flow: row;
+			grid-gap: 20px;
+			justify-content: center;
+
+
+		}
+		&--grid{
+			@media (min-width: 320px) and (max-width: 1240px) {
+				grid-auto-flow: row;
+				grid-gap: 20px;
+				justify-content: center;
+
+
+			}
+		}
+		&-title {
+			font-family: 'Lora';
+			font-weight: 500;
+			font-size: 48px;
+			line-height: 110%;
+			max-width: 540px;
+			@media (min-width: 320px) and (max-width: 1023px) {
+				font-size: 34px;
+
+			}
+		}
+		&-info {
+			display: grid;
+			grid-auto-flow: row;
+			grid-gap: 20px;
+			max-width: 640px;
+			&--text{
+				display: block;
+			}
+			span {
+				color: $pink;
+			}
+		}
+		&-btn {
+			width: 288px;
+			height: 56px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 15px 25px;
+			border-radius: 10px;
+			background: $olive;
+			color: $mainColor;
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				border-radius: 40px;
+			}
+		}
+	}
+}
+.person {
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		&-title {
+			font-family: 'Lora';
+			font-weight: 500;
+			font-size: 48px;
+			line-height: 110%;
+			max-width: 540px;
+
+		}
+		&-info {
+			max-width: 640px;
+			span {
+				color: $pink;
+			}
+		}
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		max-width: 378px;
+		height: 567px;
+		cursor: pointer;
+		&:hover {
+			.person__item-card {
+				transition: all 0.3s ease-in-out;
+				transform: rotate(2.66deg);
+			}
+		}
+		&-container {
+			position: relative;
+			max-width: 378px;
+		}
+		&-card {
+			position: absolute;
+			inset: 0;
+			z-index: -1;
+			border-radius: 10px;
+			width: 378px;
+			height: 477px;
+			background: $pink;
+		}
+		&-img {
+			width: 378px;
+			height: 477px;
+			border-radius: 10px;
+		}
+	}
+	&__info {
+		display: flex;
+		max-width: 378px;
+		flex-direction: column;
+		gap: 5px;
+		&-name {
+			font-weight: 700;
+		}
+		&-about {
+			font-size: 16px;
+			line-height: 120%;
+		}
+	}
+}
+
+.newspage {
+	padding: 80px 0;
+	&__content {
+		max-width: 860px;
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		margin: 0 auto;
+	}
+	&-title {
+		font-weight: 600;
+		font-size: 25px;
+		line-height: 34px;
+	}
+	&-text {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+}
+
+.charityevents {
+	padding-top: 100px;
+	padding-bottom: 60px;
+}
+
+@media screen and (max-width: 1250px) {
+	.btn {
+		font-size: 16px;
+		&:hover {
+			width: 391px;
+			padding: 12px 10px;
+		}
+		&-label {
+			transform: translateX(20px);
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.btn {
+		font-size: 14px;
+		&:hover {
+			width: 251px;
+			padding: 12px 10px;
+			gap: 0;
+			.btn-icon {
+				transform: translateX(20px);
+			}
+		}
+		&-label {
+			transform: translateX(30px);
+		}
+	}
+}
+@media screen and (max-width: 480px) {
+	.person {
+		&__item {
+			&-card {
+				width: 308px;
+				height: 407px;
+			}
+			&-img {
+				width: 308px;
+				height: 407px;
+			}
+		}
+		&__info {
+			&-name {
+				font-weight: 700;
+				// font-size: 18px;
+				// line-height: 24;
+			}
+			&-about {
+				max-width: 308px;
+				font-size: 14px;
+				line-height: 120%;
+			}
+		}
+	}
+}
+

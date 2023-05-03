@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="./assets/images/favicon/apple-touch-icon.png"
+	/>
+	<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon/favicon-32x32.png"
+	/>
+	<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./assets/images/favicon/favicon-16x16.png"
+	/>
+	<title>Благотворительный фонд «MARYAM»</title>
+	<link rel="stylesheet" href="scss/style.css"/>
+</head>
+<body>
+	<!--overlay-->
+	<div class="overlay">
+		<div id="popup" class="popup">
+			<div class="popup__block">
+				<button class="popup__closebtn"></button>
+				<div class="popup__nav">
+					<div class="popup__nav-item">
+						<div class="popup__nav-title">О фонде</div>
+						<div class="popup__nav-list">
+							<a class="popup__nav-link" href="about.html">О фонде</a>
+							<a class="popup__nav-link" href="#1">Председатель совета</a>
+							<a class="popup__nav-link" href="#1">Сотрудники</a>
+							<a class="popup__nav-link" href="#1">Звезды</a>
+							<a class="popup__nav-link" href="#1">Попечительский совет</a>
+							<a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
+							<a class="popup__nav-link" href="#1">Частный клуб</a>
+							<a class="popup__nav-link" href="#1">Частные партнеры</a>
+						</div>
+					</div>
+					<div class="popup__nav-item">
+						<div class="popup__nav-title">Новости фонда</div>
+						<div class="popup__nav-list">
+							<a class="popup__nav-link" href="#">Новости фонда</a>
+							<a class="popup__nav-link" href="#1">Председатель совета</a>
+							<a class="popup__nav-link" href="#1">Сотрудники</a>
+							<a class="popup__nav-link" href="#1">Звезды</a>
+							<a class="popup__nav-link" href="#1">Попечительский совет</a>
+							<a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
+							<a class="popup__nav-link" href="#1">Частный клуб</a>
+							<a class="popup__nav-link" href="#1">Частные партнеры</a>
+						</div>
+					</div>
+					<div class="popup__nav-item">
+						<div class="popup__nav-title">Отчеты</div>
+						<div class="popup__nav-list">
+							<a class="popup__nav-link" href="#">Отчеты</a>
+							<a class="popup__nav-link" href="#1">Председатель совета</a>
+							<a class="popup__nav-link" href="#1">Сотрудники</a>
+							<a class="popup__nav-link" href="#1">Звезды</a>
+							<a class="popup__nav-link" href="#1">Попечительский совет</a>
+							<a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
+							<a class="popup__nav-link" href="#1">Частный клуб</a>
+							<a class="popup__nav-link" href="#1">Частные партнеры</a>
+						</div>
+					</div>
+					<div class="popup__nav-item">
+						<div class="popup__nav-title">Жизнь фонда</div>
+						<div class="popup__nav-list">
+							<a class="popup__nav-link" href="#">Жизнь фонда</a>
+							<a class="popup__nav-link" href="#1">Председатель совета</a>
+							<a class="popup__nav-link" href="#1">Сотрудники</a>
+							<a class="popup__nav-link" href="#1">Звезды</a>
+							<a class="popup__nav-link" href="#1">Попечительский совет</a>
+							<a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
+							<a class="popup__nav-link" href="#1">Частный клуб</a>
+							<a class="popup__nav-link" href="#1">Частные партнеры</a>
+						</div>
+					</div>
+					<div class="popup__nav-item">
+						<div class="popup__nav-title">Контакты</div>
+						<div class="popup__nav-list">
+							<a class="popup__nav-link" href="#">Контакты</a>
+							<a class="popup__nav-link" href="#1">Председатель совета</a>
+							<a class="popup__nav-link" href="#1">Сотрудники</a>
+							<a class="popup__nav-link" href="#1">Звезды</a>
+							<a class="popup__nav-link" href="#1">Попечительский совет</a>
+							<a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
+							<a class="popup__nav-link" href="#1">Частный клуб</a>
+							<a class="popup__nav-link" href="#1">Частные партнеры</a>
+						</div>
+					</div>
+				</div>
+				<div class="popup__buttons">
+					<a class="button button_pink" href="#">Хочу помочь</a>
+					<a class="button button_olive" href="#">Нужна помощь</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--header-->
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__content">
+					<a class="logo" href="index.html"
+					><img
+							class="logo__img"
+							src="./assets/images/main-logo.png"
+							alt="Logo"
+					/></a>
+					<div class="header__block">
+						<nav class="header__nav">
+							<ul class="header__nav-list">
+								<li class="header__nav-item">
+									<a class="header__nav-link" href="about.html">О фонде</a>
+									<ul class="header__nav-submenu">
+										<li class="header__nav-submenu-item">
+											<a class="header__nav-submenu-link" href="chairman.html"
+											>Председатель совета</a
+											>
+										</li>
+										<li class="header__nav-submenu-item">
+											<a
+													class="header__nav-submenu-link"
+													href="employees.html"
+											>Сотрудники</a
+											>
+										</li>
+										<li class="header__nav-submenu-item">
+											<a class="header__nav-submenu-link" href="stars.html"
+											>Звезды</a
+											>
+										</li>
+										<li class="header__nav-submenu-item">
+											<a class="header__nav-submenu-link" href="council.html"
+											>Попечительский совет</a
+											>
+										</li>
+										<li class="header__nav-submenu-item">
+											<a class="header__nav-submenu-link" href="corporatePartners.html"
+											>Корпоративные партнеры</a
+											>
+										</li>
+										<li class="header__nav-submenu-item">
+											<a class="header__nav-submenu-link" href="privateclub.html"
+											>Частный клуб</a
+											>
+										</li>
+										<li class="header__nav-submenu-item">
+											<a class="header__nav-submenu-link" href="privatepartners.html"
+											>Частные партнеры</a
+											>
+										</li>
+									</ul>
+								</li>
+								<li class="header__nav-item">
+									<a class="header__nav-link" href="news.html">Новости фонда</a>
+								</li>
+								<li class="header__nav-item">
+									<a class="header__nav-link" href="reports.html">Отчеты</a>
+								</li>
+								<li class="header__nav-item">
+									<a class="header__nav-link" href="fundlife.html">Жизнь фонда</a>
+								</li>
+								<li class="header__nav-item">
+									<a class="header__nav-link" href="contacts.html"
+									>Контакты</a
+									>
+								</li>
+							</ul>
+						</nav>
+						<div class="header__buttons">
+							<a class="button button_pink" href="#">Хочу помочь</a>
+							<a class="button button_olive" href="needhelp.html"
+							>Нужна помощь</a
+							>
+							<div class="header__buttons-lng">
+								<a class="header__buttons-lng-current" href="index.html"
+								>RU</a
+								>
+								<ul class="header__buttons-list">
+									<li class="header__buttons-item">
+										<a class="header__buttons-link" href="#kz">KZ</a>
+									</li>
+									<li class="header__buttons-item">
+										<a class="header__buttons-link" href="#en">EN</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="header__burger">
+							<div class="header__burger-btn"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--main-->
+	<main class="main">
+		<section class="navigation">
+			<div class="container">
+				<nav class="navigation__block">
+					<div class="navigation__info">
+						<div class="navigation__breadcrumbs">
+							<a class="navigation__breadcrumbs-link" href="index.html"
+							>Главная</a
+							>
+							<span class="navigation__breadcrumbs-delimiter">/</span>
+							<a class="navigation__breadcrumbs-link" href="about.html"
+							>О фонде</a
+							>
+							<span class="navigation__breadcrumbs-delimiter">/</span>
+							<a class="navigation__breadcrumbs-link" href="stars.html"
+							>Звезды</a
+							>
+						</div>
+						<h1 class="navigation__info-title">Звезды</h1>
+					</div>
+					<div class="navigation__buttons">
+						<a class="navigation__buttons-link" href="chairman.html"
+						>Председатель совета</a
+						>
+						<a class="navigation__buttons-link" href="employees.html">Сотрудники</a>
+						<a
+								class="navigation__buttons-link navigation__buttons-link_active"
+								href="stars.html"
+						>Звезды</a
+						>
+						<a class="navigation__buttons-link" href="council.html"
+						>Попечительский совет</a
+						>
+						<a class="navigation__buttons-link" href="corporatePartners.html"
+						>Корпоративные партнеры</a
+						>
+						<a class="navigation__buttons-link" href="privateclub.html">Частный клуб</a>
+						<a class="navigation__buttons-link" href="privatepartners.html">Частные партнеры</a>
+					</div>
+				</nav>
+			</div>
+		</section>
+		<section class="star">
+			<div class="container">
+				<div class="star__wrapper">
+					<div class="info__content">
+						<h2 class="info__content-title">Звезды</h2>
+						<p class="info__content-info">
+							Известные люди нашей эстрады, шоу-бизнеса, политики, спорта,
+							театра и других сфер деятельности всегда с большим энтузиазмом
+							<span>участвуют в благотворительных акциях</span>, направленных
+							на спасение тяжелобольных детей.
+						</p>
+					</div>
+					<div class="star__block">
+						<div class="person__item">
+							<div class="person__item-container">
+								<img
+										class="person__item-img"
+										src="./assets/images/stars/star-1.png"
+										alt=""
+								/>
+								<div class="person__item-card"></div>
+							</div>
+							<div class="person__info">
+								<h4 class="person__info-name">Гребенкина Анастасия</h4>
+								<p class="person__info-about">
+									Фигуристка, тренер, основательница школы фигурного катания.
+								</p>
+							</div>
+						</div>
+						<div class="person__item">
+							<div class="person__item-container">
+								<img
+										class="person__item-img"
+										src="./assets/images/stars/star-2.png"
+										alt=""
+								/>
+								<div class="person__item-card"></div>
+							</div>
+							<div class="person__info">
+								<h4 class="person__info-name">Дарья Терехова</h4>
+								<p class="person__info-about">
+									Прима Московского Академического музыкального театра им.
+									К.С. Станиславского и В.И. Немировича-Данченко
+								</p>
+							</div>
+						</div>
+						<div class="person__item">
+							<div class="person__item-container">
+								<img
+										class="person__item-img"
+										src="./assets/images/stars/star-3.png"
+										alt=""
+								/>
+								<div class="person__item-card"></div>
+							</div>
+							<div class="person__info">
+								<h4 class="person__info-name">Зайцева Ольга</h4>
+								<p class="person__info-about">
+									Российская биатлонистка, двукратная олимпийская чемпионка в
+									эстафете, трёхкратная чемпионка мира, заслуженный мастер
+									спорта России, многолетний лидер сборной России
+								</p>
+							</div>
+						</div>
+						<div class="person__item">
+							<div class="person__item-container">
+								<img
+										class="person__item-img"
+										src="./assets/images/employees/employer-4.png"
+										alt=""
+								/>
+								<div class="person__item-card"></div>
+							</div>
+							<div class="person__info">
+								<h4 class="person__info-name">Наталья Полякова</h4>
+								<p class="person__info-about">
+									Ассистент президента и вице-президента
+								</p>
+							</div>
+						</div>
+						<div class="person__item">
+							<div class="person__item-container">
+								<img
+										class="person__item-img"
+										src="./assets/images/employees/employer-5.png"
+										alt=""
+								/>
+								<div class="person__item-card"></div>
+							</div>
+							<div class="person__info">
+								<h4 class="person__info-name">Юлия Полунина</h4>
+								<p class="person__info-about">
+									Администратор проектов медицинского департамента
+								</p>
+							</div>
+						</div>
+						<div class="person__item">
+							<div class="person__item-container">
+								<img
+										class="person__item-img"
+										src="./assets/images/employees/employer-6.png"
+										alt=""
+								/>
+								<div class="person__item-card"></div>
+							</div>
+							<div class="person__info">
+								<h4 class="person__info-name">Юлия Гончарова</h4>
+								<p class="person__info-about">
+									руководитель отдела по связям с общественностью
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!--footer-->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__top">
+					<a class="footer__top-logo" href="index.html"
+					><img src="./assets/images/footer-logo.png" alt=""
+					/></a>
+					<div class="footer__top-social">
+						<a class="footer__top-link" href="#"
+						>
+							<svg class="footer__top-twitter" class="">
+								<use xlink:href="sprite.svg#twitter"></use>
+							</svg
+							>
+						</a>
+						<a class="footer__top-link" href="#"
+						><img src="./assets/images/instagram.png" alt=""
+						/></a>
+						<a class="footer__top-btn" href="#">Напишите нам</a>
+					</div>
+				</div>
+				<div class="footer__about">
+					<div class="footer__about-info">
+						<span>127006, Москва</span>
+						<span>ул.Малая Дмитровка, д.16, стр.6</span>
+					</div>
+					<div class="footer__about-info">
+						<a href="tel:+#">+7 (499) 500-14-15</a>
+						<a href="mailto:#" class="">info@life-line.ru</a>
+					</div>
+					<div class="footer__about-info">
+						<span class="footer__about-title">По программам фонда</span>
+						<a href="tel:+#">+7 (499) 501-11-61</a>
+					</div>
+				</div>
+				<div class="footer__bottom">
+							<span class="footer__bottom-left"
+							>© 2023 Благотворительный фонд «Mariyam»</span
+							>
+					<a class="footer__bottom-right" href="#"
+					>Разработка сайтов <span>в Астане</span></a
+					>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+.fundabout {
+	padding: 100px 0;
+	&__content {
+		display: flex;
+		align-items: center;
+		gap: 60px;
+		justify-content: space-between;
+	}
+	&__about {
+		max-width: 640px;
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		&-title {
+			font-family: 'Lora';
+			font-weight: 500;
+			font-size: 48px;
+			line-height: 110%;
+			span {
+				color: $pink;
+			}
+		}
+		&-description {
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+		}
+		&-text {
+			&-block {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+			}
+			&-bold {
+				font-weight: 700;
+			}
+		}
+	}
+	&__img {
+		position: relative;
+		width: 584px;
+		height: 584px;
+		background-image: url('../assets/images/fund/fund-img.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+}
+
+@media screen and (max-width: 1450px) {
+	.fundabout {
+		&__content {
+			gap: 0;
+			justify-content: space-between;
+		}
+		&__about {
+			max-width: 540px;
+		}
+	}
+}
+
+@media screen and (max-width: 1250px) {
+	.fundabout {
+		&__about {
+			max-width: 440px;
+			&-title {
+				font-size: 44px;
+			}
+			&-description {
+				font-size: 18px;
+				line-height: 24px;
+			}
+		}
+		&__img {
+			width: 504px;
+			height: 504px;
+			&-frame {
+				width: 504px;
+				height: 524px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.fundabout {
+		padding: 50px 0;
+		&__about {
+			max-width: 340px;
+			&-title {
+				font-size: 34px;
+			}
+			&-description {
+				font-size: 15px;
+				line-height: 20px;
+			}
+		}
+		&__img {
+			width: 434px;
+			height: 434px;
+			&-frame {
+				width: 434px;
+				height: 444px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 830px) {
+	.fundabout {
+		&__content {
+			flex-direction: column;
+			gap: 40px;
+		}
+		&__about {
+			max-width: 540px;
+		}
+	}
+}
+@media screen and (max-width: 576px) {
+	.fundabout {
+		&__content {
+			flex-direction: column;
+			gap: 40px;
+		}
+		&__about {
+			max-width: 440px;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.fundabout {
+		&__about {
+			max-width: 340px;
+			&-title {
+				font-size: 28px;
+			}
+			&-description {
+				font-size: 14px;
+				line-height: 18px;
+			}
+		}
+		&__img {
+			width: 334px;
+			height: 334px;
+			&-frame {
+				width: 334px;
+				height: 344px;
+			}
+		}
+	}
+}
