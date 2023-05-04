@@ -3,23 +3,24 @@ const reviewContents = document.querySelectorAll('.reviews__content-item')
 const mapBtns = document.querySelectorAll('.statistics__review-item')
 const commentBlocks = document.querySelectorAll('.statistics__review-comment')
 const burger = document.querySelector('.header__burger')
-const sideMenu = document.querySelector('.overlay')
+const sideMenu = document.querySelector('.mobile-menu')
 const popup = document.querySelector('.popup')
 const sideMenuLink = document.querySelectorAll('.popup__nav-title')
 const sideMenuLinkDropdown = document.querySelectorAll('.popup__nav-list')
-const closeBtn = document.querySelector('.popup__closebtn')
+const closeBtn = document.querySelector('.mobile-menu__close')
 const body = document.querySelector('body');
 
 
 burger.addEventListener('click',()=>{
 	burger.classList.toggle('open')
-	sideMenu.style.display = 'block'
-
+	sideMenu.classList.add('mobile-menu--active')
+	body.classList.add('no-scroll')
 
 })
 closeBtn.addEventListener('click', ()=> {
-	sideMenu.style.display = 'none'
+	sideMenu.classList.remove('mobile-menu--active')
 	burger.classList.remove('open')
+	body.classList.remove('no-scroll')
 })
 document.querySelectorAll('.popup__nav-link').forEach((link)=>{
 	link.addEventListener('click',()=>{
@@ -47,7 +48,7 @@ sideMenuLink.forEach((btn,idx)=> {
 			sideMenuLinkDropdown.forEach((item)=>{
 				item.style.display = 'none'
 			})
-			sideMenuLinkDropdown[idx].style.display = 'flex'
+			sideMenuLinkDropdown[idx].style.display = 'grid'
 		})
 	})
 })
@@ -70,17 +71,86 @@ mapBtns.forEach((btn,idx)=>{
 		commentBlocks[idx].classList.toggle('statistics__review-comment-active')
 	})
 })
-new Swiper('.mySwiper', {
-	slidesPerView: 'auto'	,
-	spaceBetween: 20,
+new Swiper('.starsSwiper', {
+	slidesPerView: 4,
 	centeredSlides: false,
-	loop: false,
-
-	a11y: true,
-	keyboardControl: true,
+	spaceBetween: 40,
 	grabCursor: true,
+	loop: false,
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true
+	},
+	breakpoints: {
+		// when window width is >= 320px
+		320: {
+			slidesPerView: 1,
+			centeredSlides: true,
+		},
+		// when window width is >= 480px
+		480: {
+			slidesPerView: 2,
+			spaceBetween: 30
+		},
+		// when window width is >= 640px
+		992: {
+			slidesPerView: 3,
+			spaceBetween: 30
+		},
+		1200: {
+			slidesPerView: 4,
+			spaceBetween: 40
+		}
+	}
+});
+new Swiper('.partnersSlider', {
+	slidesPerView: 'auto',
+	centeredSlides: false,
+	grabCursor: true,
+	navigation: {
+		nextEl: ".next",
+		prevEl: ".prev"
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true
+	},
+})
+new Swiper('.chairmanSlider', {
+	slidesPerView: 4,
+	centeredSlides: false,
+	spaceBetween: 40,
+	grabCursor: true,
+	loop: false,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true
+	},
+	breakpoints: {
+		// when window width is >= 320px
+		320: {
+			slidesPerView: 1,
+			centeredSlides: true,
+		},
+		// when window width is >= 480px
+		480: {
+			slidesPerView: 2,
+			spaceBetween: 20
+		},
+		// when window width is >= 640px
+		992: {
+			slidesPerView: 3,
+			spaceBetween: 30
+		},
+		1200: {
+			slidesPerView: 4,
+			spaceBetween: 40
+		}
 	}
 })
+$(document).ready(function() {
+	$('.lang-select').select2();
+});
+
+
+

@@ -65,21 +65,30 @@
             padding: 11px 10px;
             text-align: center;
             &:hover{
-                background: $pink;
+                background-color: $pink;
 				color: $white;
 				border-radius: 10px;
+              @media(min-width: 320px) and (max-width: 1023px) {
+                background-color: $white ;
+
+              }
             }
             &-active{
                 background: $pink;
 				color: $white;
 				border-radius: 10px;
+              @media(min-width: 320px) and (max-width: 1023px) {
+                background-color: $white ;
+
+              }
             }
         }
         &-list{
             display: none;
-            flex-direction: column;
-            padding-left: 20px;
-            gap: 5px;
+            grid-auto-flow: row;
+            grid-gap: 15px;
+          margin-top: 0.5rem;
+            padding-left: 1rem;
         }
         &-link{
             color: $mainColor;
@@ -105,4 +114,7 @@
             gap: 5px;
         }
 	}
+}
+.no-scroll{
+  overflow-y: hidden;
 }

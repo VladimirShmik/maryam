@@ -26,85 +26,6 @@
     <link rel="stylesheet" href="scss/style.css"/>
 </head>
 <body>
-    <!--overlay-->
-    <div class="overlay">
-        <div id="popup" class="popup">
-            <div class="popup__block">
-                <button class="popup__closebtn"></button>
-                <div class="popup__nav">
-                    <div class="popup__nav-item">
-                        <div class="popup__nav-title">О фонде</div>
-                        <div class="popup__nav-list">
-                            <a class="popup__nav-link" href="about.html">О фонде</a>
-                            <a class="popup__nav-link" href="#1">Председатель совета</a>
-                            <a class="popup__nav-link" href="#1">Сотрудники</a>
-                            <a class="popup__nav-link" href="#1">Звезды</a>
-                            <a class="popup__nav-link" href="#1">Попечительский совет</a>
-                            <a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
-                            <a class="popup__nav-link" href="#1">Частный клуб</a>
-                            <a class="popup__nav-link" href="#1">Частные партнеры</a>
-                        </div>
-                    </div>
-                    <div class="popup__nav-item">
-                        <div class="popup__nav-title">Новости фонда</div>
-                        <div class="popup__nav-list">
-                            <a class="popup__nav-link" href="#">Новости фонда</a>
-                            <a class="popup__nav-link" href="#1">Председатель совета</a>
-                            <a class="popup__nav-link" href="#1">Сотрудники</a>
-                            <a class="popup__nav-link" href="#1">Звезды</a>
-                            <a class="popup__nav-link" href="#1">Попечительский совет</a>
-                            <a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
-                            <a class="popup__nav-link" href="#1">Частный клуб</a>
-                            <a class="popup__nav-link" href="#1">Частные партнеры</a>
-                        </div>
-                    </div>
-                    <div class="popup__nav-item">
-                        <div class="popup__nav-title">Отчеты</div>
-                        <div class="popup__nav-list">
-                            <a class="popup__nav-link" href="#">Отчеты</a>
-                            <a class="popup__nav-link" href="#1">Председатель совета</a>
-                            <a class="popup__nav-link" href="#1">Сотрудники</a>
-                            <a class="popup__nav-link" href="#1">Звезды</a>
-                            <a class="popup__nav-link" href="#1">Попечительский совет</a>
-                            <a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
-                            <a class="popup__nav-link" href="#1">Частный клуб</a>
-                            <a class="popup__nav-link" href="#1">Частные партнеры</a>
-                        </div>
-                    </div>
-                    <div class="popup__nav-item">
-                        <div class="popup__nav-title">Жизнь фонда</div>
-                        <div class="popup__nav-list">
-                            <a class="popup__nav-link" href="#">Жизнь фонда</a>
-                            <a class="popup__nav-link" href="#1">Председатель совета</a>
-                            <a class="popup__nav-link" href="#1">Сотрудники</a>
-                            <a class="popup__nav-link" href="#1">Звезды</a>
-                            <a class="popup__nav-link" href="#1">Попечительский совет</a>
-                            <a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
-                            <a class="popup__nav-link" href="#1">Частный клуб</a>
-                            <a class="popup__nav-link" href="#1">Частные партнеры</a>
-                        </div>
-                    </div>
-                    <div class="popup__nav-item">
-                        <div class="popup__nav-title">Контакты</div>
-                        <div class="popup__nav-list">
-                            <a class="popup__nav-link" href="#">Контакты</a>
-                            <a class="popup__nav-link" href="#1">Председатель совета</a>
-                            <a class="popup__nav-link" href="#1">Сотрудники</a>
-                            <a class="popup__nav-link" href="#1">Звезды</a>
-                            <a class="popup__nav-link" href="#1">Попечительский совет</a>
-                            <a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
-                            <a class="popup__nav-link" href="#1">Частный клуб</a>
-                            <a class="popup__nav-link" href="#1">Частные партнеры</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="popup__buttons">
-                    <a class="button button_pink" href="#">Хочу помочь</a>
-                    <a class="button button_olive" href="#">Нужна помощь</a>
-                </div>
-            </div>
-        </div>
-    </div>
     <!--header-->
     <header class="header">
         <div class="container">
@@ -182,19 +103,12 @@
                             <a class="button button_olive" href="needhelp.html"
                             >Нужна помощь</a
                             >
-                            <div class="header__buttons-lng">
-                                <a class="header__buttons-lng-current" href="index.html"
-                                >RU</a
-                                >
-                                <ul class="header__buttons-list">
-                                    <li class="header__buttons-item">
-                                        <a class="header__buttons-link" href="#kz">KZ</a>
-                                    </li>
-                                    <li class="header__buttons-item">
-                                        <a class="header__buttons-link" href="#en">EN</a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <select class="lang-select" name="lang">
+                                <option value="KZ">KZ</option>
+                                <option value="RU">RU</option>
+                                <option value="EN">EN</option>
+
+                            </select>
                         </div>
                         <div class="header__burger">
                             <div class="header__burger-btn"></div>
@@ -202,6 +116,36 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="mobile-menu">
+            <button class="mobile-menu__close">&#215;</button>
+            <nav class="mobile-nav">
+                <li class="popup__nav-title">
+                    <a href="#" class="mobile-nav__link">О фонде</a>
+                    <div class="popup__nav-list">
+                        <a class="popup__nav-link" href="about.html">О фонде</a>
+                        <a class="popup__nav-link" href="#1">Председатель совета</a>
+                        <a class="popup__nav-link" href="#1">Сотрудники</a>
+                        <a class="popup__nav-link" href="#1">Звезды</a>
+                        <a class="popup__nav-link" href="#1">Попечительский совет</a>
+                        <a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
+                        <a class="popup__nav-link" href="#1">Частный клуб</a>
+                        <a class="popup__nav-link" href="#1">Частные партнеры</a>
+                    </div>
+                </li>
+                <li class="popup__nav-title">
+                    <a href="#" class="mobile-nav__link">Новости фонда</a>
+                </li>
+                <li class="popup__nav-title">
+                    <a href="#" class="mobile-nav__link">Отчеты</a>
+                </li>
+                <li class="popup__nav-title">
+                    <a href="#" class="mobile-nav__link">Жизнь фонда</a>
+                </li>
+                <li class="popup__nav-title">
+                    <a href="#" class="mobile-nav__link">Контакты</a>
+                </li>
+            </nav>
         </div>
     </header>
     <!--main-->
@@ -1267,89 +1211,127 @@
         </section>
         <section class="stars">
             <div class="container">
-                <div class="stars__info">
-                    <h3 class="stars__info-title">Звезды</h3>
-                    <p class="stars__info-text">
-                        Известные люди нашей эстрады, шоу-бизнеса, политики, спорта,
-                        театра и других сфер деятельности всегда с большим энтузиазмом
-                        <span>участвуют в благотворительных акциях</span>, направленных на
-                        спасение тяжелобольных детей.
-                    </p>
-                </div>
-            </div>
-            <div class="stars__swiper">
-                <div class="swiper mySwiper swiper-stars">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="swiper-slide-container">
-                                <img
-                                        class="swiper-slide-img"
-                                        src="./assets/images/stars/star-1.png"
-                                        alt=""
-                                />
-                                <div class="swiper-slide-card"></div>
+                <div class="stars-wrapper">
+                    <div class="stars__info">
+                        <h3 class="stars__info-title">Звезды</h3>
+                        <p class="stars__info-text">
+                            Известные люди нашей эстрады, шоу-бизнеса, политики, спорта,
+                            театра и других сфер деятельности всегда с большим энтузиазмом
+                            <span>участвуют в благотворительных акциях</span>, направленных на
+                            спасение тяжелобольных детей.
+                        </p>
+                    </div>
+                    <div class="swiper-stars">
+                        <div class="swiper starsSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="stars-block">
+                                        <img class="stars-block__img" src="./assets/images/stars/star-1.png" alt=""/>
+                                        <div class="stars-block__bg"></div>
+                                    </div>
+                                    <div class="stars-box">
+                                        <h4 class="stars-box__title">Гребенкина Анастасия</h4>
+                                        <p class="stars-box__text">
+                                            Фигуристка, тренер, основательница школы фигурного катания.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="stars-block">
+                                        <img class="stars-block__img" src="./assets/images/stars/star-2.png" alt=""/>
+                                        <div class="stars-block__bg"></div>
+                                    </div>
+                                    <div class="stars-box">
+                                        <h4 class="stars-box__title">Дарья Терехова</h4>
+                                        <p class="stars-box__text">
+                                            Прима Московского Академического музыкального театра им.
+                                            К.С. Станиславского и В.И. Немировича-Данченко
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="stars-block">
+                                        <img class="stars-block__img" src="./assets/images/stars/star-3.png" alt=""/>
+                                        <div class="stars-block__bg"></div>
+                                    </div>
+                                    <div class="stars-box">
+                                        <h4 class="stars-box__title">Зайцева Ольга</h4>
+                                        <p class="stars-box__text">
+                                            Российская биатлонистка, двукратная олимпийская чемпионка в
+                                            эстафете, трёхкратная чемпионка мира, заслуженный мастер
+                                            спорта России, многолетний лидер сборной России
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="stars-block">
+                                        <img class="stars-block__img" src="./assets/images/stars/star-4.png" alt=""/>
+                                        <div class="stars-block__bg"></div>
+                                    </div>
+                                    <div class="stars-box">
+                                        <h4 class="stars-box__title">Зейналова Светлана</h4>
+                                        <p class="stars-box__text">
+                                            Радио- и телеведущая программы «Доброе утро» на Первом
+                                            канале.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="stars-block">
+                                        <img class="stars-block__img" src="./assets/images/stars/star-1.png" alt=""/>
+                                        <div class="stars-block__bg"></div>
+                                    </div>
+                                    <div class="stars-box">
+                                        <h4 class="stars-box__title">Гребенкина Анастасия</h4>
+                                        <p class="stars-box__text">
+                                            Фигуристка, тренер, основательница школы фигурного катания.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="stars-block">
+                                        <img class="stars-block__img" src="./assets/images/stars/star-2.png" alt=""/>
+                                        <div class="stars-block__bg"></div>
+                                    </div>
+                                    <div class="stars-box">
+                                        <h4 class="stars-box__title">Дарья Терехова</h4>
+                                        <p class="stars-box__text">
+                                            Прима Московского Академического музыкального театра им.
+                                            К.С. Станиславского и В.И. Немировича-Данченко
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="stars-block">
+                                        <img class="stars-block__img" src="./assets/images/stars/star-3.png" alt=""/>
+                                        <div class="stars-block__bg"></div>
+                                    </div>
+                                    <div class="stars-box">
+                                        <h4 class="stars-box__title">Зайцева Ольга</h4>
+                                        <p class="stars-box__text">
+                                            Российская биатлонистка, двукратная олимпийская чемпионка в
+                                            эстафете, трёхкратная чемпионка мира, заслуженный мастер
+                                            спорта России, многолетний лидер сборной России
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="stars-block">
+                                        <img class="stars-block__img" src="./assets/images/stars/star-4.png" alt=""/>
+                                        <div class="stars-block__bg"></div>
+                                    </div>
+                                    <div class="stars-box">
+                                        <h4 class="stars-box__title">Зейналова Светлана</h4>
+                                        <p class="stars-box__text">
+                                            Радио- и телеведущая программы «Доброе утро» на Первом
+                                            канале.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="swiper__info">
-                                <h4 class="swiper__info-name">Гребенкина Анастасия</h4>
-                                <p class="swiper__info-about">
-                                    Фигуристка, тренер, основательница школы фигурного катания.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="swiper-slide-container">
-                                <img
-                                        class="swiper-slide-img"
-                                        src="./assets/images/stars/star-2.png"
-                                        alt=""
-                                />
-                                <div class="swiper-slide-card"></div>
-                            </div>
-                            <div class="swiper__info">
-                                <h4 class="swiper__info-name">Дарья Терехова</h4>
-                                <p class="swiper__info-about">
-                                    Прима Московского Академического музыкального театра им.
-                                    К.С. Станиславского и В.И. Немировича-Данченко
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="swiper-slide-container">
-                                <img
-                                        class="swiper-slide-img"
-                                        src="./assets/images/stars/star-3.png"
-                                        alt=""
-                                />
-                                <div class="swiper-slide-card"></div>
-                            </div>
-                            <div class="swiper__info">
-                                <h4 class="swiper__info-name">Зайцева Ольга</h4>
-                                <p class="swiper__info-about">
-                                    Российская биатлонистка, двукратная олимпийская чемпионка в
-                                    эстафете, трёхкратная чемпионка мира, заслуженный мастер
-                                    спорта России, многолетний лидер сборной России
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="swiper-slide-container">
-                                <img
-                                        class="swiper-slide-img"
-                                        src="./assets/images/stars/star-4.png"
-                                        alt=""
-                                />
-                                <div class="swiper-slide-card"></div>
-                            </div>
-                            <div class="swiper__info">
-                                <h4 class="swiper__info-name">Зейналова Светлана</h4>
-                                <p class="swiper__info-about">
-                                    Радио- и телеведущая программы «Доброе утро» на Первом
-                                    канале.
-                                </p>
-                            </div>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -1400,6 +1382,8 @@
             </div>
         </div>
     </footer>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/select2.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
