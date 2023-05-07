@@ -26,184 +26,139 @@
     <link rel="stylesheet" href="scss/style.css"/>
 </head>
 <body>
-    <!--overlay-->
-    <div class="overlay">
-        <div id="popup" class="popup">
-            <div class="popup__block">
-                <button class="popup__closebtn"></button>
-                <div class="popup__nav">
-                    <div class="popup__nav-item">
-                        <div class="popup__nav-title">О фонде</div>
-                        <div class="popup__nav-list">
-                            <a class="popup__nav-link" href="about.html">О фонде</a>
-                            <a class="popup__nav-link" href="#1">Председатель совета</a>
-                            <a class="popup__nav-link" href="#1">Сотрудники</a>
-                            <a class="popup__nav-link" href="#1">Звезды</a>
-                            <a class="popup__nav-link" href="#1">Попечительский совет</a>
-                            <a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
-                            <a class="popup__nav-link" href="#1">Частный клуб</a>
-                            <a class="popup__nav-link" href="#1">Частные партнеры</a>
+<!--header-->
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__content">
+                <a class="logo" href="index.html"
+                ><img
+                        class="logo__img"
+                        src="./assets/images/main-logo.png"
+                        alt="Logo"
+                /></a>
+                <div class="header__block">
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="about.html">О фонде</a>
+                                <ul class="header__nav-submenu">
+                                    <li class="header__nav-submenu-item">
+                                        <a class="header__nav-submenu-link" href="chairman.html"
+                                        >Председатель совета</a
+                                        >
+                                    </li>
+                                    <li class="header__nav-submenu-item">
+                                        <a
+                                                class="header__nav-submenu-link"
+                                                href="employees.html"
+                                        >Сотрудники</a
+                                        >
+                                    </li>
+                                    <li class="header__nav-submenu-item">
+                                        <a class="header__nav-submenu-link" href="stars.html"
+                                        >Звезды</a
+                                        >
+                                    </li>
+                                    <li class="header__nav-submenu-item">
+                                        <a class="header__nav-submenu-link" href="council.html"
+                                        >Попечительский совет</a
+                                        >
+                                    </li>
+                                    <li class="header__nav-submenu-item">
+                                        <a class="header__nav-submenu-link" href="corporatePartners.html"
+                                        >Корпоративные партнеры</a
+                                        >
+                                    </li>
+                                    <li class="header__nav-submenu-item">
+                                        <a class="header__nav-submenu-link" href="privateclub.html"
+                                        >Частный клуб</a
+                                        >
+                                    </li>
+                                    <li class="header__nav-submenu-item">
+                                        <a class="header__nav-submenu-link" href="privatepartners.html"
+                                        >Частные партнеры</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="news.html">Новости фонда</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="reports.html">Отчеты</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="fundlife.html">Жизнь фонда</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="contacts.html"
+                                >Контакты</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__buttons">
+                        <a class="button button_pink" href="#">Хочу помочь</a>
+                        <a class="button button_olive" href="needhelp.html"
+                        >Нужна помощь</a
+                        >
+                        <div class="select-box">
+                            <select class="lang-select" name="lang">
+                                <option value="KZ">KZ</option>
+                                <option value="RU">RU</option>
+                                <option value="EN">EN</option>
+
+                            </select>
                         </div>
+
                     </div>
-                    <div class="popup__nav-item">
-                        <div class="popup__nav-title">Новости фонда</div>
-                        <div class="popup__nav-list">
-                            <a class="popup__nav-link" href="#">Новости фонда</a>
-                            <a class="popup__nav-link" href="#1">Председатель совета</a>
-                            <a class="popup__nav-link" href="#1">Сотрудники</a>
-                            <a class="popup__nav-link" href="#1">Звезды</a>
-                            <a class="popup__nav-link" href="#1">Попечительский совет</a>
-                            <a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
-                            <a class="popup__nav-link" href="#1">Частный клуб</a>
-                            <a class="popup__nav-link" href="#1">Частные партнеры</a>
-                        </div>
+                    <div class="header__burger">
+                        <div class="header__burger-btn"></div>
                     </div>
-                    <div class="popup__nav-item">
-                        <div class="popup__nav-title">Отчеты</div>
-                        <div class="popup__nav-list">
-                            <a class="popup__nav-link" href="#">Отчеты</a>
-                            <a class="popup__nav-link" href="#1">Председатель совета</a>
-                            <a class="popup__nav-link" href="#1">Сотрудники</a>
-                            <a class="popup__nav-link" href="#1">Звезды</a>
-                            <a class="popup__nav-link" href="#1">Попечительский совет</a>
-                            <a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
-                            <a class="popup__nav-link" href="#1">Частный клуб</a>
-                            <a class="popup__nav-link" href="#1">Частные партнеры</a>
-                        </div>
-                    </div>
-                    <div class="popup__nav-item">
-                        <div class="popup__nav-title">Жизнь фонда</div>
-                        <div class="popup__nav-list">
-                            <a class="popup__nav-link" href="#">Жизнь фонда</a>
-                            <a class="popup__nav-link" href="#1">Председатель совета</a>
-                            <a class="popup__nav-link" href="#1">Сотрудники</a>
-                            <a class="popup__nav-link" href="#1">Звезды</a>
-                            <a class="popup__nav-link" href="#1">Попечительский совет</a>
-                            <a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
-                            <a class="popup__nav-link" href="#1">Частный клуб</a>
-                            <a class="popup__nav-link" href="#1">Частные партнеры</a>
-                        </div>
-                    </div>
-                    <div class="popup__nav-item">
-                        <div class="popup__nav-title">Контакты</div>
-                        <div class="popup__nav-list">
-                            <a class="popup__nav-link" href="#">Контакты</a>
-                            <a class="popup__nav-link" href="#1">Председатель совета</a>
-                            <a class="popup__nav-link" href="#1">Сотрудники</a>
-                            <a class="popup__nav-link" href="#1">Звезды</a>
-                            <a class="popup__nav-link" href="#1">Попечительский совет</a>
-                            <a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
-                            <a class="popup__nav-link" href="#1">Частный клуб</a>
-                            <a class="popup__nav-link" href="#1">Частные партнеры</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="popup__buttons">
-                    <a class="button button_pink" href="#">Хочу помочь</a>
-                    <a class="button button_olive" href="#">Нужна помощь</a>
                 </div>
             </div>
         </div>
     </div>
-    <!--header-->
-    <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <div class="header__content">
-                    <a class="logo" href="index.html"
-                    ><img
-                            class="logo__img"
-                            src="./assets/images/main-logo.png"
-                            alt="Logo"
-                    /></a>
-                    <div class="header__block">
-                        <nav class="header__nav">
-                            <ul class="header__nav-list">
-                                <li class="header__nav-item">
-                                    <a class="header__nav-link" href="about.html">О фонде</a>
-                                    <ul class="header__nav-submenu">
-                                        <li class="header__nav-submenu-item">
-                                            <a class="header__nav-submenu-link" href="chairman.html"
-                                            >Председатель совета</a
-                                            >
-                                        </li>
-                                        <li class="header__nav-submenu-item">
-                                            <a
-                                                    class="header__nav-submenu-link"
-                                                    href="employees.html"
-                                            >Сотрудники</a
-                                            >
-                                        </li>
-                                        <li class="header__nav-submenu-item">
-                                            <a class="header__nav-submenu-link" href="stars.html"
-                                            >Звезды</a
-                                            >
-                                        </li>
-                                        <li class="header__nav-submenu-item">
-                                            <a class="header__nav-submenu-link" href="council.html"
-                                            >Попечительский совет</a
-                                            >
-                                        </li>
-                                        <li class="header__nav-submenu-item">
-                                            <a class="header__nav-submenu-link" href="corporatePartners.html"
-                                            >Корпоративные партнеры</a
-                                            >
-                                        </li>
-                                        <li class="header__nav-submenu-item">
-                                            <a class="header__nav-submenu-link" href="privateclub.html"
-                                            >Частный клуб</a
-                                            >
-                                        </li>
-                                        <li class="header__nav-submenu-item">
-                                            <a class="header__nav-submenu-link" href="privatepartners.html"
-                                            >Частные партнеры</a
-                                            >
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="header__nav-item">
-                                    <a class="header__nav-link" href="news.html">Новости фонда</a>
-                                </li>
-                                <li class="header__nav-item">
-                                    <a class="header__nav-link" href="reports.html">Отчеты</a>
-                                </li>
-                                <li class="header__nav-item">
-                                    <a class="header__nav-link" href="fundlife.html">Жизнь фонда</a>
-                                </li>
-                                <li class="header__nav-item">
-                                    <a class="header__nav-link" href="contacts.html"
-                                    >Контакты</a
-                                    >
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="header__buttons">
-                            <a class="button button_pink" href="#">Хочу помочь</a>
-                            <a class="button button_olive" href="needhelp.html"
-                            >Нужна помощь</a
-                            >
-                            <div class="header__buttons-lng">
-                                <a class="header__buttons-lng-current" href="index.html"
-                                >RU</a
-                                >
-                                <ul class="header__buttons-list">
-                                    <li class="header__buttons-item">
-                                        <a class="header__buttons-link" href="#kz">KZ</a>
-                                    </li>
-                                    <li class="header__buttons-item">
-                                        <a class="header__buttons-link" href="#en">EN</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="header__burger">
-                            <div class="header__burger-btn"></div>
-                        </div>
-                    </div>
+    <div class="mobile-menu">
+        <button class="mobile-menu__close">&#215;</button>
+        <nav class="mobile-nav">
+            <li class="popup__nav-title">
+                <a href="#" class="mobile-nav__link">О фонде</a>
+                <div class="popup__nav-list">
+                    <a class="popup__nav-link" href="about.html">О фонде</a>
+                    <a class="popup__nav-link" href="#1">Председатель совета</a>
+                    <a class="popup__nav-link" href="#1">Сотрудники</a>
+                    <a class="popup__nav-link" href="#1">Звезды</a>
+                    <a class="popup__nav-link" href="#1">Попечительский совет</a>
+                    <a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
+                    <a class="popup__nav-link" href="#1">Частный клуб</a>
+                    <a class="popup__nav-link" href="#1">Частные партнеры</a>
                 </div>
+            </li>
+            <li class="popup__nav-title">
+                <a href="#" class="mobile-nav__link">Новости фонда</a>
+            </li>
+            <li class="popup__nav-title">
+                <a href="#" class="mobile-nav__link">Отчеты</a>
+            </li>
+            <li class="popup__nav-title">
+                <a href="#" class="mobile-nav__link">Жизнь фонда</a>
+            </li>
+            <li class="popup__nav-title">
+                <a href="#" class="mobile-nav__link">Контакты</a>
+            </li>
+            <div class="select-box select-box--mobile">
+                <select class="lang-select" name="lang">
+                    <option value="KZ">KZ</option>
+                    <option value="RU">RU</option>
+                    <option value="EN">EN</option>
+
+                </select>
             </div>
-        </div>
-    </header>
+        </nav>
+    </div>
+</header>
     <!--main-->
     <main class="main">
         <section class="navigation">
@@ -265,211 +220,421 @@
             </div>
         </section>
         <section class="corpnews">
-            <div class="container">
-                <div class="corpnews__buttons">
-                    <button class="corpnews__buttons-btn corpnews__buttons-btn_active">
-                        Что мы можем сделать вместе
-                    </button>
-                    <button class="corpnews__buttons-btn">Акции</button>
-                </div>
-            </div>
-            <div class="corpnews__block">
+            <div class="tabs-wrapper">
                 <div class="container">
-                    <div class="corpnews__content">
-                        <a class="corpnews__item" href="#">
-                            <div class="corpnews__item-box">
-                                <div class="corpnews__item-img corpnews__item-img-one"></div>
-                                <div class="corpnews__item-info">
-                                    <h4 class="corpnews__item-title">
-                                        Покупка медицинского оборудования
-                                    </h4>
-                                    <p class="corpnews__item-description">
-                                        Сделать вклад для одной из российских клиник
-                                    </p>
-                                </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="buttonWrapper">
+                                <button class="tab-button active" data-id="home">Что мы можем сделать вместе</button>
+                                <button class="tab-button" data-id="about">Акции</button>
                             </div>
-                            <div class="corpnews__item-read">
-                                <span>Читать полностью</span>
-                                <svg
-                                        width="20"
-                                        height="21"
-                                        viewBox="0 0 20 21"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                            d="M17.5001 11.3333H2.50008C2.00008 11.3333 1.66675 11 1.66675 10.5C1.66675 9.99999 2.00008 9.66666 2.50008 9.66666H17.5001C18.0001 9.66666 18.3334 9.99999 18.3334 10.5C18.3334 11 18.0001 11.3333 17.5001 11.3333Z"
-                                            fill="black"
-                                    />
-                                    <path
-                                            d="M13.3333 15.5C13.0833 15.5 12.9167 15.4167 12.75 15.25C12.4167 14.9167 12.4167 14.4167 12.75 14.0833L16.3333 10.5L12.75 6.91667C12.4167 6.58333 12.4167 6.08333 12.75 5.75C13.0833 5.41667 13.5833 5.41667 13.9167 5.75L18.0833 9.91667C18.4167 10.25 18.4167 10.75 18.0833 11.0833L13.9167 15.25C13.75 15.4167 13.5833 15.5 13.3333 15.5Z"
-                                            fill="black"
-                                    />
-                                </svg>
-                            </div>
-                        </a>
-                        <a class="corpnews__item" href="#">
-                            <div class="corpnews__item-box">
-                                <div class="corpnews__item-img corpnews__item-img-two"></div>
-                                <div class="corpnews__item-info">
-                                    <h4 class="corpnews__item-title">
-                                        Благотворительность вместо сувениров
-                                    </h4>
-                                    <p class="corpnews__item-description">
-                                        Специальный проект фонда
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="corpnews__item-read">
-                                <span>Читать полностью</span>
-                                <svg
-                                        width="20"
-                                        height="21"
-                                        viewBox="0 0 20 21"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                            d="M17.5001 11.3333H2.50008C2.00008 11.3333 1.66675 11 1.66675 10.5C1.66675 9.99999 2.00008 9.66666 2.50008 9.66666H17.5001C18.0001 9.66666 18.3334 9.99999 18.3334 10.5C18.3334 11 18.0001 11.3333 17.5001 11.3333Z"
-                                            fill="black"
-                                    />
-                                    <path
-                                            d="M13.3333 15.5C13.0833 15.5 12.9167 15.4167 12.75 15.25C12.4167 14.9167 12.4167 14.4167 12.75 14.0833L16.3333 10.5L12.75 6.91667C12.4167 6.58333 12.4167 6.08333 12.75 5.75C13.0833 5.41667 13.5833 5.41667 13.9167 5.75L18.0833 9.91667C18.4167 10.25 18.4167 10.75 18.0833 11.0833L13.9167 15.25C13.75 15.4167 13.5833 15.5 13.3333 15.5Z"
-                                            fill="black"
-                                    />
-                                </svg>
-                            </div>
-                        </a>
-                        <a class="corpnews__item" href="#">
-                            <div class="corpnews__item-box">
-                                <div
-                                        class="corpnews__item-img corpnews__item-img-three"
-                                ></div>
-                                <div class="corpnews__item-info">
-                                    <h4 class="corpnews__item-title">Социальный маркетинг</h4>
-                                    <p class="corpnews__item-description">
-                                        Организовать акции в рамках социального маркетинга
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="corpnews__item-read">
-                                <span>Читать полностью</span>
-                                <svg
-                                        width="20"
-                                        height="21"
-                                        viewBox="0 0 20 21"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                            d="M17.5001 11.3333H2.50008C2.00008 11.3333 1.66675 11 1.66675 10.5C1.66675 9.99999 2.00008 9.66666 2.50008 9.66666H17.5001C18.0001 9.66666 18.3334 9.99999 18.3334 10.5C18.3334 11 18.0001 11.3333 17.5001 11.3333Z"
-                                            fill="black"
-                                    />
-                                    <path
-                                            d="M13.3333 15.5C13.0833 15.5 12.9167 15.4167 12.75 15.25C12.4167 14.9167 12.4167 14.4167 12.75 14.0833L16.3333 10.5L12.75 6.91667C12.4167 6.58333 12.4167 6.08333 12.75 5.75C13.0833 5.41667 13.5833 5.41667 13.9167 5.75L18.0833 9.91667C18.4167 10.25 18.4167 10.75 18.0833 11.0833L13.9167 15.25C13.75 15.4167 13.5833 15.5 13.3333 15.5Z"
-                                            fill="black"
-                                    />
-                                </svg>
-                            </div>
-                        </a>
-                        <a class="corpnews__item" href="#">
-                            <div class="corpnews__item-box">
-                                <div class="corpnews__item-img corpnews__item-img-one"></div>
-                                <div class="corpnews__item-info">
-                                    <h4 class="corpnews__item-title">
-                                        Покупка медицинского оборудования
-                                    </h4>
-                                    <p class="corpnews__item-description">
-                                        Сделать вклад для одной из российских клиник
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="corpnews__item-read">
-                                <span>Читать полностью</span>
-                                <svg
-                                        width="20"
-                                        height="21"
-                                        viewBox="0 0 20 21"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                            d="M17.5001 11.3333H2.50008C2.00008 11.3333 1.66675 11 1.66675 10.5C1.66675 9.99999 2.00008 9.66666 2.50008 9.66666H17.5001C18.0001 9.66666 18.3334 9.99999 18.3334 10.5C18.3334 11 18.0001 11.3333 17.5001 11.3333Z"
-                                            fill="black"
-                                    />
-                                    <path
-                                            d="M13.3333 15.5C13.0833 15.5 12.9167 15.4167 12.75 15.25C12.4167 14.9167 12.4167 14.4167 12.75 14.0833L16.3333 10.5L12.75 6.91667C12.4167 6.58333 12.4167 6.08333 12.75 5.75C13.0833 5.41667 13.5833 5.41667 13.9167 5.75L18.0833 9.91667C18.4167 10.25 18.4167 10.75 18.0833 11.0833L13.9167 15.25C13.75 15.4167 13.5833 15.5 13.3333 15.5Z"
-                                            fill="black"
-                                    />
-                                </svg>
-                            </div>
-                        </a>
-                        <a class="corpnews__item" href="#">
-                            <div class="corpnews__item-box">
-                                <div class="corpnews__item-img corpnews__item-img-two"></div>
-                                <div class="corpnews__item-info">
-                                    <h4 class="corpnews__item-title">
-                                        Благотворительность вместо сувениров
-                                    </h4>
-                                    <p class="corpnews__item-description">
-                                        Специальный проект фонда
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="corpnews__item-read">
-                                <span>Читать полностью</span>
-                                <svg
-                                        width="20"
-                                        height="21"
-                                        viewBox="0 0 20 21"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                            d="M17.5001 11.3333H2.50008C2.00008 11.3333 1.66675 11 1.66675 10.5C1.66675 9.99999 2.00008 9.66666 2.50008 9.66666H17.5001C18.0001 9.66666 18.3334 9.99999 18.3334 10.5C18.3334 11 18.0001 11.3333 17.5001 11.3333Z"
-                                            fill="black"
-                                    />
-                                    <path
-                                            d="M13.3333 15.5C13.0833 15.5 12.9167 15.4167 12.75 15.25C12.4167 14.9167 12.4167 14.4167 12.75 14.0833L16.3333 10.5L12.75 6.91667C12.4167 6.58333 12.4167 6.08333 12.75 5.75C13.0833 5.41667 13.5833 5.41667 13.9167 5.75L18.0833 9.91667C18.4167 10.25 18.4167 10.75 18.0833 11.0833L13.9167 15.25C13.75 15.4167 13.5833 15.5 13.3333 15.5Z"
-                                            fill="black"
-                                    />
-                                </svg>
-                            </div>
-                        </a>
-                        <a class="corpnews__item" href="#">
-                            <div class="corpnews__item-box">
-                                <div
-                                        class="corpnews__item-img corpnews__item-img-three"
-                                ></div>
-                                <div class="corpnews__item-info">
-                                    <h4 class="corpnews__item-title">Социальный маркетинг</h4>
-                                    <p class="corpnews__item-description">
-                                        Организовать акции в рамках социального маркетинга
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="corpnews__item-read">
-                                <span>Читать полностью</span>
-                                <svg
-                                        width="20"
-                                        height="21"
-                                        viewBox="0 0 20 21"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                            d="M17.5001 11.3333H2.50008C2.00008 11.3333 1.66675 11 1.66675 10.5C1.66675 9.99999 2.00008 9.66666 2.50008 9.66666H17.5001C18.0001 9.66666 18.3334 9.99999 18.3334 10.5C18.3334 11 18.0001 11.3333 17.5001 11.3333Z"
-                                            fill="black"
-                                    />
-                                    <path
-                                            d="M13.3333 15.5C13.0833 15.5 12.9167 15.4167 12.75 15.25C12.4167 14.9167 12.4167 14.4167 12.75 14.0833L16.3333 10.5L12.75 6.91667C12.4167 6.58333 12.4167 6.08333 12.75 5.75C13.0833 5.41667 13.5833 5.41667 13.9167 5.75L18.0833 9.91667C18.4167 10.25 18.4167 10.75 18.0833 11.0833L13.9167 15.25C13.75 15.4167 13.5833 15.5 13.3333 15.5Z"
-                                            fill="black"
-                                    />
-                                </svg>
-                            </div>
-                        </a>
+                        </div>
                     </div>
-                    <div class="corpnews__content"></div>
+                </div>
+
+                <div class="contentWrapper">
+                    <div class="content active" id="home">
+                        <div class="corpnews__block">
+                            <div class="container">
+                                <div class="corpnews__content">
+                                    <a class="corpnews__item" href="#">
+                                        <div class="corpnews__item-box">
+                                            <div class="corpnews__item-img corpnews__item-img-one"></div>
+                                            <div class="corpnews__item-info">
+                                                <h4 class="corpnews__item-title">
+                                                    Покупка медицинского оборудования
+                                                </h4>
+                                                <p class="corpnews__item-description">
+                                                    Сделать вклад для одной из российских клиник
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="corpnews__item-read">
+                                            <span>Читать полностью</span>
+                                            <svg
+                                                    width="20"
+                                                    height="21"
+                                                    viewBox="0 0 20 21"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                        d="M17.5001 11.3333H2.50008C2.00008 11.3333 1.66675 11 1.66675 10.5C1.66675 9.99999 2.00008 9.66666 2.50008 9.66666H17.5001C18.0001 9.66666 18.3334 9.99999 18.3334 10.5C18.3334 11 18.0001 11.3333 17.5001 11.3333Z"
+                                                        fill="black"
+                                                />
+                                                <path
+                                                        d="M13.3333 15.5C13.0833 15.5 12.9167 15.4167 12.75 15.25C12.4167 14.9167 12.4167 14.4167 12.75 14.0833L16.3333 10.5L12.75 6.91667C12.4167 6.58333 12.4167 6.08333 12.75 5.75C13.0833 5.41667 13.5833 5.41667 13.9167 5.75L18.0833 9.91667C18.4167 10.25 18.4167 10.75 18.0833 11.0833L13.9167 15.25C13.75 15.4167 13.5833 15.5 13.3333 15.5Z"
+                                                        fill="black"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <a class="corpnews__item" href="#">
+                                        <div class="corpnews__item-box">
+                                            <div class="corpnews__item-img corpnews__item-img-two"></div>
+                                            <div class="corpnews__item-info">
+                                                <h4 class="corpnews__item-title">
+                                                    Благотворительность вместо сувениров
+                                                </h4>
+                                                <p class="corpnews__item-description">
+                                                    Специальный проект фонда
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="corpnews__item-read">
+                                            <span>Читать полностью</span>
+                                            <svg
+                                                    width="20"
+                                                    height="21"
+                                                    viewBox="0 0 20 21"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                        d="M17.5001 11.3333H2.50008C2.00008 11.3333 1.66675 11 1.66675 10.5C1.66675 9.99999 2.00008 9.66666 2.50008 9.66666H17.5001C18.0001 9.66666 18.3334 9.99999 18.3334 10.5C18.3334 11 18.0001 11.3333 17.5001 11.3333Z"
+                                                        fill="black"
+                                                />
+                                                <path
+                                                        d="M13.3333 15.5C13.0833 15.5 12.9167 15.4167 12.75 15.25C12.4167 14.9167 12.4167 14.4167 12.75 14.0833L16.3333 10.5L12.75 6.91667C12.4167 6.58333 12.4167 6.08333 12.75 5.75C13.0833 5.41667 13.5833 5.41667 13.9167 5.75L18.0833 9.91667C18.4167 10.25 18.4167 10.75 18.0833 11.0833L13.9167 15.25C13.75 15.4167 13.5833 15.5 13.3333 15.5Z"
+                                                        fill="black"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <a class="corpnews__item" href="#">
+                                        <div class="corpnews__item-box">
+                                            <div
+                                                    class="corpnews__item-img corpnews__item-img-three"
+                                            ></div>
+                                            <div class="corpnews__item-info">
+                                                <h4 class="corpnews__item-title">Социальный маркетинг</h4>
+                                                <p class="corpnews__item-description">
+                                                    Организовать акции в рамках социального маркетинга
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="corpnews__item-read">
+                                            <span>Читать полностью</span>
+                                            <svg
+                                                    width="20"
+                                                    height="21"
+                                                    viewBox="0 0 20 21"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                        d="M17.5001 11.3333H2.50008C2.00008 11.3333 1.66675 11 1.66675 10.5C1.66675 9.99999 2.00008 9.66666 2.50008 9.66666H17.5001C18.0001 9.66666 18.3334 9.99999 18.3334 10.5C18.3334 11 18.0001 11.3333 17.5001 11.3333Z"
+                                                        fill="black"
+                                                />
+                                                <path
+                                                        d="M13.3333 15.5C13.0833 15.5 12.9167 15.4167 12.75 15.25C12.4167 14.9167 12.4167 14.4167 12.75 14.0833L16.3333 10.5L12.75 6.91667C12.4167 6.58333 12.4167 6.08333 12.75 5.75C13.0833 5.41667 13.5833 5.41667 13.9167 5.75L18.0833 9.91667C18.4167 10.25 18.4167 10.75 18.0833 11.0833L13.9167 15.25C13.75 15.4167 13.5833 15.5 13.3333 15.5Z"
+                                                        fill="black"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <a class="corpnews__item" href="#">
+                                        <div class="corpnews__item-box">
+                                            <div class="corpnews__item-img corpnews__item-img-one"></div>
+                                            <div class="corpnews__item-info">
+                                                <h4 class="corpnews__item-title">
+                                                    Покупка медицинского оборудования
+                                                </h4>
+                                                <p class="corpnews__item-description">
+                                                    Сделать вклад для одной из российских клиник
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="corpnews__item-read">
+                                            <span>Читать полностью</span>
+                                            <svg
+                                                    width="20"
+                                                    height="21"
+                                                    viewBox="0 0 20 21"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                        d="M17.5001 11.3333H2.50008C2.00008 11.3333 1.66675 11 1.66675 10.5C1.66675 9.99999 2.00008 9.66666 2.50008 9.66666H17.5001C18.0001 9.66666 18.3334 9.99999 18.3334 10.5C18.3334 11 18.0001 11.3333 17.5001 11.3333Z"
+                                                        fill="black"
+                                                />
+                                                <path
+                                                        d="M13.3333 15.5C13.0833 15.5 12.9167 15.4167 12.75 15.25C12.4167 14.9167 12.4167 14.4167 12.75 14.0833L16.3333 10.5L12.75 6.91667C12.4167 6.58333 12.4167 6.08333 12.75 5.75C13.0833 5.41667 13.5833 5.41667 13.9167 5.75L18.0833 9.91667C18.4167 10.25 18.4167 10.75 18.0833 11.0833L13.9167 15.25C13.75 15.4167 13.5833 15.5 13.3333 15.5Z"
+                                                        fill="black"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <a class="corpnews__item" href="#">
+                                        <div class="corpnews__item-box">
+                                            <div class="corpnews__item-img corpnews__item-img-two"></div>
+                                            <div class="corpnews__item-info">
+                                                <h4 class="corpnews__item-title">
+                                                    Благотворительность вместо сувениров
+                                                </h4>
+                                                <p class="corpnews__item-description">
+                                                    Специальный проект фонда
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="corpnews__item-read">
+                                            <span>Читать полностью</span>
+                                            <svg
+                                                    width="20"
+                                                    height="21"
+                                                    viewBox="0 0 20 21"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                        d="M17.5001 11.3333H2.50008C2.00008 11.3333 1.66675 11 1.66675 10.5C1.66675 9.99999 2.00008 9.66666 2.50008 9.66666H17.5001C18.0001 9.66666 18.3334 9.99999 18.3334 10.5C18.3334 11 18.0001 11.3333 17.5001 11.3333Z"
+                                                        fill="black"
+                                                />
+                                                <path
+                                                        d="M13.3333 15.5C13.0833 15.5 12.9167 15.4167 12.75 15.25C12.4167 14.9167 12.4167 14.4167 12.75 14.0833L16.3333 10.5L12.75 6.91667C12.4167 6.58333 12.4167 6.08333 12.75 5.75C13.0833 5.41667 13.5833 5.41667 13.9167 5.75L18.0833 9.91667C18.4167 10.25 18.4167 10.75 18.0833 11.0833L13.9167 15.25C13.75 15.4167 13.5833 15.5 13.3333 15.5Z"
+                                                        fill="black"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <a class="corpnews__item" href="#">
+                                        <div class="corpnews__item-box">
+                                            <div
+                                                    class="corpnews__item-img corpnews__item-img-three"
+                                            ></div>
+                                            <div class="corpnews__item-info">
+                                                <h4 class="corpnews__item-title">Социальный маркетинг</h4>
+                                                <p class="corpnews__item-description">
+                                                    Организовать акции в рамках социального маркетинга
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="corpnews__item-read">
+                                            <span>Читать полностью</span>
+                                            <svg
+                                                    width="20"
+                                                    height="21"
+                                                    viewBox="0 0 20 21"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                        d="M17.5001 11.3333H2.50008C2.00008 11.3333 1.66675 11 1.66675 10.5C1.66675 9.99999 2.00008 9.66666 2.50008 9.66666H17.5001C18.0001 9.66666 18.3334 9.99999 18.3334 10.5C18.3334 11 18.0001 11.3333 17.5001 11.3333Z"
+                                                        fill="black"
+                                                />
+                                                <path
+                                                        d="M13.3333 15.5C13.0833 15.5 12.9167 15.4167 12.75 15.25C12.4167 14.9167 12.4167 14.4167 12.75 14.0833L16.3333 10.5L12.75 6.91667C12.4167 6.58333 12.4167 6.08333 12.75 5.75C13.0833 5.41667 13.5833 5.41667 13.9167 5.75L18.0833 9.91667C18.4167 10.25 18.4167 10.75 18.0833 11.0833L13.9167 15.25C13.75 15.4167 13.5833 15.5 13.3333 15.5Z"
+                                                        fill="black"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="corpnews__content"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content" id="about">
+                        <div class="corpnews__block">
+                            <div class="container">
+                                <div class="corpnews__content">
+                                    <a class="corpnews__item" href="#">
+                                        <div class="corpnews__item-box">
+                                            <div class="corpnews__item-img corpnews__item-img-one"></div>
+                                            <div class="corpnews__item-info">
+                                                <h4 class="corpnews__item-title">
+                                                    Покупка медицинского оборудования1
+                                                </h4>
+                                                <p class="corpnews__item-description">
+                                                    Сделать вклад для одной из российских клиник
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="corpnews__item-read">
+                                            <span>Читать полностью</span>
+                                            <svg
+                                                    width="20"
+                                                    height="21"
+                                                    viewBox="0 0 20 21"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                        d="M17.5001 11.3333H2.50008C2.00008 11.3333 1.66675 11 1.66675 10.5C1.66675 9.99999 2.00008 9.66666 2.50008 9.66666H17.5001C18.0001 9.66666 18.3334 9.99999 18.3334 10.5C18.3334 11 18.0001 11.3333 17.5001 11.3333Z"
+                                                        fill="black"
+                                                />
+                                                <path
+                                                        d="M13.3333 15.5C13.0833 15.5 12.9167 15.4167 12.75 15.25C12.4167 14.9167 12.4167 14.4167 12.75 14.0833L16.3333 10.5L12.75 6.91667C12.4167 6.58333 12.4167 6.08333 12.75 5.75C13.0833 5.41667 13.5833 5.41667 13.9167 5.75L18.0833 9.91667C18.4167 10.25 18.4167 10.75 18.0833 11.0833L13.9167 15.25C13.75 15.4167 13.5833 15.5 13.3333 15.5Z"
+                                                        fill="black"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <a class="corpnews__item" href="#">
+                                        <div class="corpnews__item-box">
+                                            <div class="corpnews__item-img corpnews__item-img-two"></div>
+                                            <div class="corpnews__item-info">
+                                                <h4 class="corpnews__item-title">
+                                                    Благотворительность вместо сувениров
+                                                </h4>
+                                                <p class="corpnews__item-description">
+                                                    Специальный проект фонда
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="corpnews__item-read">
+                                            <span>Читать полностью</span>
+                                            <svg
+                                                    width="20"
+                                                    height="21"
+                                                    viewBox="0 0 20 21"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                        d="M17.5001 11.3333H2.50008C2.00008 11.3333 1.66675 11 1.66675 10.5C1.66675 9.99999 2.00008 9.66666 2.50008 9.66666H17.5001C18.0001 9.66666 18.3334 9.99999 18.3334 10.5C18.3334 11 18.0001 11.3333 17.5001 11.3333Z"
+                                                        fill="black"
+                                                />
+                                                <path
+                                                        d="M13.3333 15.5C13.0833 15.5 12.9167 15.4167 12.75 15.25C12.4167 14.9167 12.4167 14.4167 12.75 14.0833L16.3333 10.5L12.75 6.91667C12.4167 6.58333 12.4167 6.08333 12.75 5.75C13.0833 5.41667 13.5833 5.41667 13.9167 5.75L18.0833 9.91667C18.4167 10.25 18.4167 10.75 18.0833 11.0833L13.9167 15.25C13.75 15.4167 13.5833 15.5 13.3333 15.5Z"
+                                                        fill="black"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <a class="corpnews__item" href="#">
+                                        <div class="corpnews__item-box">
+                                            <div
+                                                    class="corpnews__item-img corpnews__item-img-three"
+                                            ></div>
+                                            <div class="corpnews__item-info">
+                                                <h4 class="corpnews__item-title">Социальный маркетинг</h4>
+                                                <p class="corpnews__item-description">
+                                                    Организовать акции в рамках социального маркетинга
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="corpnews__item-read">
+                                            <span>Читать полностью</span>
+                                            <svg
+                                                    width="20"
+                                                    height="21"
+                                                    viewBox="0 0 20 21"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                        d="M17.5001 11.3333H2.50008C2.00008 11.3333 1.66675 11 1.66675 10.5C1.66675 9.99999 2.00008 9.66666 2.50008 9.66666H17.5001C18.0001 9.66666 18.3334 9.99999 18.3334 10.5C18.3334 11 18.0001 11.3333 17.5001 11.3333Z"
+                                                        fill="black"
+                                                />
+                                                <path
+                                                        d="M13.3333 15.5C13.0833 15.5 12.9167 15.4167 12.75 15.25C12.4167 14.9167 12.4167 14.4167 12.75 14.0833L16.3333 10.5L12.75 6.91667C12.4167 6.58333 12.4167 6.08333 12.75 5.75C13.0833 5.41667 13.5833 5.41667 13.9167 5.75L18.0833 9.91667C18.4167 10.25 18.4167 10.75 18.0833 11.0833L13.9167 15.25C13.75 15.4167 13.5833 15.5 13.3333 15.5Z"
+                                                        fill="black"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <a class="corpnews__item" href="#">
+                                        <div class="corpnews__item-box">
+                                            <div class="corpnews__item-img corpnews__item-img-one"></div>
+                                            <div class="corpnews__item-info">
+                                                <h4 class="corpnews__item-title">
+                                                    Покупка медицинского оборудования
+                                                </h4>
+                                                <p class="corpnews__item-description">
+                                                    Сделать вклад для одной из российских клиник
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="corpnews__item-read">
+                                            <span>Читать полностью</span>
+                                            <svg
+                                                    width="20"
+                                                    height="21"
+                                                    viewBox="0 0 20 21"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                        d="M17.5001 11.3333H2.50008C2.00008 11.3333 1.66675 11 1.66675 10.5C1.66675 9.99999 2.00008 9.66666 2.50008 9.66666H17.5001C18.0001 9.66666 18.3334 9.99999 18.3334 10.5C18.3334 11 18.0001 11.3333 17.5001 11.3333Z"
+                                                        fill="black"
+                                                />
+                                                <path
+                                                        d="M13.3333 15.5C13.0833 15.5 12.9167 15.4167 12.75 15.25C12.4167 14.9167 12.4167 14.4167 12.75 14.0833L16.3333 10.5L12.75 6.91667C12.4167 6.58333 12.4167 6.08333 12.75 5.75C13.0833 5.41667 13.5833 5.41667 13.9167 5.75L18.0833 9.91667C18.4167 10.25 18.4167 10.75 18.0833 11.0833L13.9167 15.25C13.75 15.4167 13.5833 15.5 13.3333 15.5Z"
+                                                        fill="black"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <a class="corpnews__item" href="#">
+                                        <div class="corpnews__item-box">
+                                            <div class="corpnews__item-img corpnews__item-img-two"></div>
+                                            <div class="corpnews__item-info">
+                                                <h4 class="corpnews__item-title">
+                                                    Благотворительность вместо сувениров
+                                                </h4>
+                                                <p class="corpnews__item-description">
+                                                    Специальный проект фонда
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="corpnews__item-read">
+                                            <span>Читать полностью</span>
+                                            <svg
+                                                    width="20"
+                                                    height="21"
+                                                    viewBox="0 0 20 21"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                        d="M17.5001 11.3333H2.50008C2.00008 11.3333 1.66675 11 1.66675 10.5C1.66675 9.99999 2.00008 9.66666 2.50008 9.66666H17.5001C18.0001 9.66666 18.3334 9.99999 18.3334 10.5C18.3334 11 18.0001 11.3333 17.5001 11.3333Z"
+                                                        fill="black"
+                                                />
+                                                <path
+                                                        d="M13.3333 15.5C13.0833 15.5 12.9167 15.4167 12.75 15.25C12.4167 14.9167 12.4167 14.4167 12.75 14.0833L16.3333 10.5L12.75 6.91667C12.4167 6.58333 12.4167 6.08333 12.75 5.75C13.0833 5.41667 13.5833 5.41667 13.9167 5.75L18.0833 9.91667C18.4167 10.25 18.4167 10.75 18.0833 11.0833L13.9167 15.25C13.75 15.4167 13.5833 15.5 13.3333 15.5Z"
+                                                        fill="black"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <a class="corpnews__item" href="#">
+                                        <div class="corpnews__item-box">
+                                            <div
+                                                    class="corpnews__item-img corpnews__item-img-three"
+                                            ></div>
+                                            <div class="corpnews__item-info">
+                                                <h4 class="corpnews__item-title">Социальный маркетинг</h4>
+                                                <p class="corpnews__item-description">
+                                                    Организовать акции в рамках социального маркетинга
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="corpnews__item-read">
+                                            <span>Читать полностью</span>
+                                            <svg
+                                                    width="20"
+                                                    height="21"
+                                                    viewBox="0 0 20 21"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                        d="M17.5001 11.3333H2.50008C2.00008 11.3333 1.66675 11 1.66675 10.5C1.66675 9.99999 2.00008 9.66666 2.50008 9.66666H17.5001C18.0001 9.66666 18.3334 9.99999 18.3334 10.5C18.3334 11 18.0001 11.3333 17.5001 11.3333Z"
+                                                        fill="black"
+                                                />
+                                                <path
+                                                        d="M13.3333 15.5C13.0833 15.5 12.9167 15.4167 12.75 15.25C12.4167 14.9167 12.4167 14.4167 12.75 14.0833L16.3333 10.5L12.75 6.91667C12.4167 6.58333 12.4167 6.08333 12.75 5.75C13.0833 5.41667 13.5833 5.41667 13.9167 5.75L18.0833 9.91667C18.4167 10.25 18.4167 10.75 18.0833 11.0833L13.9167 15.25C13.75 15.4167 13.5833 15.5 13.3333 15.5Z"
+                                                        fill="black"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="corpnews__content"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -579,11 +744,51 @@
 
                                     </div>
                                 </div>
+                                <div class="swiper-slide">
+                                    <div class="partners-block">
+                                        <div class="partners-row">
+                                            <img src="./assets/images/partners/partners-slider-img.png" alt="" class="partners-row__img">
+                                            <div class="partners-box">
+                                                <p class="partners-box__title">Анна Зверева</p>
+                                                <p class="partners-box__text">Прима Московского Академического музыкального театра им. К.С. Станиславского и В.И. Немировича-Данченко</p>
+                                            </div>
+                                        </div>
+                                        <p class="partners-block__text">«С фондом „Mariyam“ нашу команду связывают долгие годы взаимоотношений. Много лет назад мы вместе стояли у истоков создания благотворительного Забега 5275. Теперь мы сотрудничаем в рамках всей серии забегов Бегового сообщества. Фонд „Mariyam“ — благотворительный партнер, которому мы доверяем».</p>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="partners-block">
+                                        <div class="partners-row">
+                                            <img src="./assets/images/partners/partners-slider-img.png" alt="" class="partners-row__img">
+                                            <div class="partners-box">
+                                                <p class="partners-box__title">Анна Зверева</p>
+                                                <p class="partners-box__text">Прима Московского Академического музыкального театра им. К.С. Станиславского и В.И. Немировича-Данченко</p>
+                                            </div>
+                                        </div>
+                                        <p class="partners-block__text">«С фондом „Mariyam“ нашу команду связывают долгие годы взаимоотношений. Много лет назад мы вместе стояли у истоков создания благотворительного Забега 5275. Теперь мы сотрудничаем в рамках всей серии забегов Бегового сообщества. Фонд „Mariyam“ — благотворительный партнер, которому мы доверяем».</p>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="partners-block">
+                                        <div class="partners-row">
+                                            <img src="./assets/images/partners/partners-slider-img.png" alt="" class="partners-row__img">
+                                            <div class="partners-box">
+                                                <p class="partners-box__title">Анна Зверева</p>
+                                                <p class="partners-box__text">Прима Московского Академического музыкального театра им. К.С. Станиславского и В.И. Немировича-Данченко</p>
+                                            </div>
+                                        </div>
+                                        <p class="partners-block__text">«С фондом „Mariyam“ нашу команду связывают долгие годы взаимоотношений. Много лет назад мы вместе стояли у истоков создания благотворительного Забега 5275. Теперь мы сотрудничаем в рамках всей серии забегов Бегового сообщества. Фонд „Mariyam“ — благотворительный партнер, которому мы доверяем».</p>
+
+                                    </div>
+                                </div>
                             </div>
                             <!-- If we need pagination -->
                             <div class="swiper-pagination"></div>
 
-                            <!-- If we need navigation buttons -->
+                        </div>
+                        <div class="swiper-arrows">
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>
                         </div>
@@ -639,6 +844,9 @@
             </div>
         </div>
     </footer>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/select2.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>

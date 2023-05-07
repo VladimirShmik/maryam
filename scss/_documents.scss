@@ -1,6 +1,9 @@
 .documents {
 	padding: 50px 0 100px;
 	background: $secondWhite;
+	&:after{
+
+	}
 	&__content {
 		display: flex;
 		flex-direction: column;

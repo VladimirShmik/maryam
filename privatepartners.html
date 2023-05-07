@@ -26,184 +26,139 @@
     <link rel="stylesheet" href="scss/style.css"/>
 </head>
 <body>
-	<!--overlay-->
-	<div class="overlay">
-		<div id="popup" class="popup">
-			<div class="popup__block">
-				<button class="popup__closebtn"></button>
-				<div class="popup__nav">
-					<div class="popup__nav-item">
-						<div class="popup__nav-title">О фонде</div>
-						<div class="popup__nav-list">
-							<a class="popup__nav-link" href="about.html">О фонде</a>
-							<a class="popup__nav-link" href="#1">Председатель совета</a>
-							<a class="popup__nav-link" href="#1">Сотрудники</a>
-							<a class="popup__nav-link" href="#1">Звезды</a>
-							<a class="popup__nav-link" href="#1">Попечительский совет</a>
-							<a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
-							<a class="popup__nav-link" href="#1">Частный клуб</a>
-							<a class="popup__nav-link" href="#1">Частные партнеры</a>
+<!--header-->
+<header class="header">
+	<div class="container">
+		<div class="header__inner">
+			<div class="header__content">
+				<a class="logo" href="index.html"
+				><img
+						class="logo__img"
+						src="./assets/images/main-logo.png"
+						alt="Logo"
+				/></a>
+				<div class="header__block">
+					<nav class="header__nav">
+						<ul class="header__nav-list">
+							<li class="header__nav-item">
+								<a class="header__nav-link" href="about.html">О фонде</a>
+								<ul class="header__nav-submenu">
+									<li class="header__nav-submenu-item">
+										<a class="header__nav-submenu-link" href="chairman.html"
+										>Председатель совета</a
+										>
+									</li>
+									<li class="header__nav-submenu-item">
+										<a
+												class="header__nav-submenu-link"
+												href="employees.html"
+										>Сотрудники</a
+										>
+									</li>
+									<li class="header__nav-submenu-item">
+										<a class="header__nav-submenu-link" href="stars.html"
+										>Звезды</a
+										>
+									</li>
+									<li class="header__nav-submenu-item">
+										<a class="header__nav-submenu-link" href="council.html"
+										>Попечительский совет</a
+										>
+									</li>
+									<li class="header__nav-submenu-item">
+										<a class="header__nav-submenu-link" href="corporatePartners.html"
+										>Корпоративные партнеры</a
+										>
+									</li>
+									<li class="header__nav-submenu-item">
+										<a class="header__nav-submenu-link" href="privateclub.html"
+										>Частный клуб</a
+										>
+									</li>
+									<li class="header__nav-submenu-item">
+										<a class="header__nav-submenu-link" href="privatepartners.html"
+										>Частные партнеры</a
+										>
+									</li>
+								</ul>
+							</li>
+							<li class="header__nav-item">
+								<a class="header__nav-link" href="news.html">Новости фонда</a>
+							</li>
+							<li class="header__nav-item">
+								<a class="header__nav-link" href="reports.html">Отчеты</a>
+							</li>
+							<li class="header__nav-item">
+								<a class="header__nav-link" href="fundlife.html">Жизнь фонда</a>
+							</li>
+							<li class="header__nav-item">
+								<a class="header__nav-link" href="contacts.html"
+								>Контакты</a
+								>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__buttons">
+						<a class="button button_pink" href="#">Хочу помочь</a>
+						<a class="button button_olive" href="needhelp.html"
+						>Нужна помощь</a
+						>
+						<div class="select-box">
+							<select class="lang-select" name="lang">
+								<option value="KZ">KZ</option>
+								<option value="RU">RU</option>
+								<option value="EN">EN</option>
+
+							</select>
 						</div>
+
 					</div>
-					<div class="popup__nav-item">
-						<div class="popup__nav-title">Новости фонда</div>
-						<div class="popup__nav-list">
-							<a class="popup__nav-link" href="#">Новости фонда</a>
-							<a class="popup__nav-link" href="#1">Председатель совета</a>
-							<a class="popup__nav-link" href="#1">Сотрудники</a>
-							<a class="popup__nav-link" href="#1">Звезды</a>
-							<a class="popup__nav-link" href="#1">Попечительский совет</a>
-							<a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
-							<a class="popup__nav-link" href="#1">Частный клуб</a>
-							<a class="popup__nav-link" href="#1">Частные партнеры</a>
-						</div>
+					<div class="header__burger">
+						<div class="header__burger-btn"></div>
 					</div>
-					<div class="popup__nav-item">
-						<div class="popup__nav-title">Отчеты</div>
-						<div class="popup__nav-list">
-							<a class="popup__nav-link" href="#">Отчеты</a>
-							<a class="popup__nav-link" href="#1">Председатель совета</a>
-							<a class="popup__nav-link" href="#1">Сотрудники</a>
-							<a class="popup__nav-link" href="#1">Звезды</a>
-							<a class="popup__nav-link" href="#1">Попечительский совет</a>
-							<a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
-							<a class="popup__nav-link" href="#1">Частный клуб</a>
-							<a class="popup__nav-link" href="#1">Частные партнеры</a>
-						</div>
-					</div>
-					<div class="popup__nav-item">
-						<div class="popup__nav-title">Жизнь фонда</div>
-						<div class="popup__nav-list">
-							<a class="popup__nav-link" href="#">Жизнь фонда</a>
-							<a class="popup__nav-link" href="#1">Председатель совета</a>
-							<a class="popup__nav-link" href="#1">Сотрудники</a>
-							<a class="popup__nav-link" href="#1">Звезды</a>
-							<a class="popup__nav-link" href="#1">Попечительский совет</a>
-							<a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
-							<a class="popup__nav-link" href="#1">Частный клуб</a>
-							<a class="popup__nav-link" href="#1">Частные партнеры</a>
-						</div>
-					</div>
-					<div class="popup__nav-item">
-						<div class="popup__nav-title">Контакты</div>
-						<div class="popup__nav-list">
-							<a class="popup__nav-link" href="#">Контакты</a>
-							<a class="popup__nav-link" href="#1">Председатель совета</a>
-							<a class="popup__nav-link" href="#1">Сотрудники</a>
-							<a class="popup__nav-link" href="#1">Звезды</a>
-							<a class="popup__nav-link" href="#1">Попечительский совет</a>
-							<a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
-							<a class="popup__nav-link" href="#1">Частный клуб</a>
-							<a class="popup__nav-link" href="#1">Частные партнеры</a>
-						</div>
-					</div>
-				</div>
-				<div class="popup__buttons">
-					<a class="button button_pink" href="#">Хочу помочь</a>
-					<a class="button button_olive" href="#">Нужна помощь</a>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!--header-->
-	<header class="header">
-		<div class="container">
-			<div class="header__inner">
-				<div class="header__content">
-					<a class="logo" href="index.html"
-					><img
-							class="logo__img"
-							src="./assets/images/main-logo.png"
-							alt="Logo"
-					/></a>
-					<div class="header__block">
-						<nav class="header__nav">
-							<ul class="header__nav-list">
-								<li class="header__nav-item">
-									<a class="header__nav-link" href="about.html">О фонде</a>
-									<ul class="header__nav-submenu">
-										<li class="header__nav-submenu-item">
-											<a class="header__nav-submenu-link" href="chairman.html"
-											>Председатель совета</a
-											>
-										</li>
-										<li class="header__nav-submenu-item">
-											<a
-													class="header__nav-submenu-link"
-													href="employees.html"
-											>Сотрудники</a
-											>
-										</li>
-										<li class="header__nav-submenu-item">
-											<a class="header__nav-submenu-link" href="stars.html"
-											>Звезды</a
-											>
-										</li>
-										<li class="header__nav-submenu-item">
-											<a class="header__nav-submenu-link" href="council.html"
-											>Попечительский совет</a
-											>
-										</li>
-										<li class="header__nav-submenu-item">
-											<a class="header__nav-submenu-link" href="corporatePartners.html"
-											>Корпоративные партнеры</a
-											>
-										</li>
-										<li class="header__nav-submenu-item">
-											<a class="header__nav-submenu-link" href="privateclub.html"
-											>Частный клуб</a
-											>
-										</li>
-										<li class="header__nav-submenu-item">
-											<a class="header__nav-submenu-link" href="privatepartners.html"
-											>Частные партнеры</a
-											>
-										</li>
-									</ul>
-								</li>
-								<li class="header__nav-item">
-									<a class="header__nav-link" href="news.html">Новости фонда</a>
-								</li>
-								<li class="header__nav-item">
-									<a class="header__nav-link" href="reports.html">Отчеты</a>
-								</li>
-								<li class="header__nav-item">
-									<a class="header__nav-link" href="fundlife.html">Жизнь фонда</a>
-								</li>
-								<li class="header__nav-item">
-									<a class="header__nav-link" href="contacts.html"
-									>Контакты</a
-									>
-								</li>
-							</ul>
-						</nav>
-						<div class="header__buttons">
-							<a class="button button_pink" href="#">Хочу помочь</a>
-							<a class="button button_olive" href="needhelp.html"
-							>Нужна помощь</a
-							>
-							<div class="header__buttons-lng">
-								<a class="header__buttons-lng-current" href="index.html"
-								>RU</a
-								>
-								<ul class="header__buttons-list">
-									<li class="header__buttons-item">
-										<a class="header__buttons-link" href="#kz">KZ</a>
-									</li>
-									<li class="header__buttons-item">
-										<a class="header__buttons-link" href="#en">EN</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="header__burger">
-							<div class="header__burger-btn"></div>
-						</div>
-					</div>
+	<div class="mobile-menu">
+		<button class="mobile-menu__close">&#215;</button>
+		<nav class="mobile-nav">
+			<li class="popup__nav-title">
+				<a href="#" class="mobile-nav__link">О фонде</a>
+				<div class="popup__nav-list">
+					<a class="popup__nav-link" href="about.html">О фонде</a>
+					<a class="popup__nav-link" href="#1">Председатель совета</a>
+					<a class="popup__nav-link" href="#1">Сотрудники</a>
+					<a class="popup__nav-link" href="#1">Звезды</a>
+					<a class="popup__nav-link" href="#1">Попечительский совет</a>
+					<a class="popup__nav-link" href="#1">Корпоративные партнеры</a>
+					<a class="popup__nav-link" href="#1">Частный клуб</a>
+					<a class="popup__nav-link" href="#1">Частные партнеры</a>
 				</div>
+			</li>
+			<li class="popup__nav-title">
+				<a href="#" class="mobile-nav__link">Новости фонда</a>
+			</li>
+			<li class="popup__nav-title">
+				<a href="#" class="mobile-nav__link">Отчеты</a>
+			</li>
+			<li class="popup__nav-title">
+				<a href="#" class="mobile-nav__link">Жизнь фонда</a>
+			</li>
+			<li class="popup__nav-title">
+				<a href="#" class="mobile-nav__link">Контакты</a>
+			</li>
+			<div class="select-box select-box--mobile">
+				<select class="lang-select" name="lang">
+					<option value="KZ">KZ</option>
+					<option value="RU">RU</option>
+					<option value="EN">EN</option>
+
+				</select>
 			</div>
-		</div>
-	</header>
+		</nav>
+	</div>
+</header>
 	<!--main-->
 	<main class="main">
 		<section class="navigation">

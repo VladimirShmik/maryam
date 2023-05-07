@@ -1,6 +1,21 @@
 .quotes {
 	height: 530px;
 	background: $secondWhite;
+	position: relative;
+	overflow: hidden;
+
+	&::before{
+		content: '';
+		position: absolute;
+		width: 250px;
+		height: 250px;
+		left: -120px;
+		top: 372px;
+		background: #E9138D;
+		opacity: 0.2;
+		pointer-events: none;
+		filter: blur(202px);
+	}
 	&__content {
 		position: relative;
 		display: flex;

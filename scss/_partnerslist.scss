@@ -3,15 +3,17 @@
 	padding: 80px 0;
 	background-color: $secondWhite;
 	position: relative;
+	overflow: hidden;
 	z-index: 2;
 	&::before{
 		position: absolute;
 		content: '';
 		width: 675px;
 		height: 675px;
-		z-index: -1;
-		left: 0;
+		left: -460px;
+		top: 362px;
 		border-radius: 50%;
+		background: #F8268B;
 		opacity: 0.1;
 		filter: blur(202px);
 	}

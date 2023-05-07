@@ -12,10 +12,14 @@
 		justify-content: space-between;
 		grid-auto-flow: column;
 		@media (min-width: 320px) and (max-width: 1023px) {
-			grid-auto-flow: row;
-			grid-gap: 20px;
-			justify-items: center;
-			justify-content: center;
+			display: none;
+		}
+		&--mobile{
+			display: none;
+			@media (min-width: 320px) and (max-width: 1023px) {
+				width: 100%;
+				display: block;
+			}
 		}
 		&-logo > img{
 			@media (min-width: 320px) and (max-width: 1023px) {
@@ -24,29 +28,36 @@
 		}
 		&-social {
 			display: grid;
-			grid-template-columns: auto auto 1fr;
+			grid-template-columns: auto auto auto auto;
+			justify-content: space-between;
+			width: 100%;
 			grid-template-areas:
-				'block-1 block-2 block-3';
+				'block-1 block-2 block-3 block-4';
 			grid-gap: 15px;
 			@media (min-width: 320px) and (max-width: 1023px) {
 				justify-content: center;
-				grid-template-columns: 1fr 1fr;
+				grid-template-columns: 1fr auto auto;
 				grid-template-areas:
-				'block-1 block-2'
-				'block-3 block-3';
+				'block-1 block-2 block-3 '
+				'block-4 block-4 block-4';
 
 
 			}
-			& > .footer__top-link:nth-child(1){
+			& > .footer__top-logo{
 				grid-area: block-1;
 				justify-self: end;
 			}
-			& > .footer__top-link:nth-child(2){
+			& > .footer__top-link:nth-child(1){
 				grid-area: block-2;
+				justify-self: end;
+			}
+			& > .footer__top-link:nth-child(2){
+				grid-area: block-3;
 				justify-self: start;
 			}
 			& > .footer__top-btn{
-				grid-area: block-3;
+				grid-area: block-4;
+				width: 100%;
 			}
 		}
 		&-link {

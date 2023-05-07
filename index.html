@@ -103,12 +103,15 @@
                             <a class="button button_olive" href="needhelp.html"
                             >Нужна помощь</a
                             >
-                            <select class="lang-select" name="lang">
-                                <option value="KZ">KZ</option>
-                                <option value="RU">RU</option>
-                                <option value="EN">EN</option>
+                            <div class="select-box">
+                                <select class="lang-select" name="lang">
+                                    <option value="KZ">KZ</option>
+                                    <option value="RU">RU</option>
+                                    <option value="EN">EN</option>
 
-                            </select>
+                                </select>
+                            </div>
+
                         </div>
                         <div class="header__burger">
                             <div class="header__burger-btn"></div>
@@ -145,6 +148,14 @@
                 <li class="popup__nav-title">
                     <a href="#" class="mobile-nav__link">Контакты</a>
                 </li>
+                <div class="select-box select-box--mobile">
+                    <select class="lang-select" name="lang">
+                        <option value="KZ">KZ</option>
+                        <option value="RU">RU</option>
+                        <option value="EN">EN</option>
+
+                    </select>
+                </div>
             </nav>
         </div>
     </header>
@@ -1357,6 +1368,23 @@
                         <a class="footer__top-btn" href="#">Напишите нам</a>
                     </div>
                 </div>
+                <div class="footer__top--mobile">
+                    <div class="footer__top-social">
+                        <a class="footer__top-logo" href="#"
+                        ><img src="./assets/images/footer-logo.png" alt=""
+                        /></a>
+                        <a class="footer__top-link" href="#"
+                        >
+                            <svg class="footer__top-twitter" class="">
+                                <use xlink:href="sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                        <a class="footer__top-link" href="#"
+                        ><img src="./assets/images/instagram.png" alt=""
+                        /></a>
+                        <a class="footer__top-btn" href="#">Напишите нам</a>
+                    </div>
+                </div>
                 <div class="footer__about">
                     <div class="footer__about-info">
                         <span>127006, Москва</span>
@@ -1383,6 +1411,7 @@
         </div>
     </footer>
     <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <script src="js/select2.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>

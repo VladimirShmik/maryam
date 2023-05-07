@@ -89,14 +89,27 @@ display: flex;
 
   .stars-block {
     margin-bottom: 1rem;
-
+ position: relative;
+    z-index: 1;
     &__img {
       width: 100%;
 
     }
 	  &__bg{
-
+        content: '';
+        width: 100%;
+        top: 0;
+        height: 100%;
+        background: #F96DB1;
+        border-radius: 10px;
+        transition:  0.3s ease-in-out all;
+        transform: rotate(0);
+       position: absolute;
+        z-index: -1;
 	  }
   }
-
+ .stars-block:hover > .stars-block__bg{
+   transform: rotate(2.66deg);
+   transition:  0.3s ease-in-out all;
+ }
 }
