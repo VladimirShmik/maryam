@@ -44,7 +44,7 @@
 		@media (min-width: 320px) and (max-width: 1240px) {
 			grid-auto-flow: row;
 			justify-content: center;
-			gap: 20px;
+			grid-gap: 20px;
 			justify-items: center;
 		}
 		&-block {
@@ -110,8 +110,7 @@
 			display: flex;
 			align-items: center;
 			gap: 10px;
-			height: 100%;
-			padding: 14px 70.5px;
+			padding: 15px 70.5px;
 			background: $pink;
 			color: $white;
 			border-radius: 10px;

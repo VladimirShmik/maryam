@@ -4196,7 +4196,7 @@ a.ui-button:active,
   .donation__form {
     grid-auto-flow: row;
     justify-content: center;
-    gap: 20px;
+    grid-gap: 20px;
     justify-items: center;
   }
 }
@@ -4268,8 +4268,7 @@ a.ui-button:active,
   display: flex;
   align-items: center;
   gap: 10px;
-  height: 100%;
-  padding: 14px 70.5px;
+  padding: 15px 70.5px;
   background: #e9138d;
   color: #ffffff;
   border-radius: 10px;
@@ -4743,9 +4742,6 @@ a.ui-button:active,
   .statistics__review-description {
     font-size: 12px;
   }
-  .statistics__review-comment {
-    left: -115px;
-  }
   .statistics__review-comment-wrapper {
     width: 250px;
   }
@@ -4938,6 +4934,11 @@ a.ui-button:active,
     font-size: 14px;
   }
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .statistics__review-comment {
+    display: none;
+  }
+}
 .reviews {
   background: #f5f5f5;
   padding: 100px 0px;
@@ -5014,6 +5015,12 @@ a.ui-button:active,
 .reviews__tabs-active {
   border: 7px solid #ffffff;
   transform: scale(1.8);
+}
+@media (min-width: 320px) and (max-width: 1023px) {
+  .reviews__tabs-active {
+    border: 5px solid #ffffff;
+    transform: scale(1.5);
+  }
 }
 .reviews__tabs-box {
   display: flex;
@@ -5153,7 +5160,7 @@ a.ui-button:active,
     flex-direction: column;
   }
   .reviews__content-quotes {
-    top: 400px;
+    top: 450px;
   }
 }
 .partners {
@@ -5177,7 +5184,7 @@ a.ui-button:active,
 .partners__cards {
   position: relative;
   width: 434px;
-  height: 421px;
+  height: 100%;
 }
 @media (min-width: 1024px) and (max-width: 1240px) {
   .partners__cards {
@@ -5198,18 +5205,18 @@ a.ui-button:active,
   cursor: pointer;
 }
 .partners__cards-item-first {
-  position: absolute;
+  position: relative;
   inset: 0;
   z-index: 10;
   transform: rotate(-2.47deg);
 }
 .partners__cards-item-second {
-  position: absolute;
+  position: relative;
   inset: 0;
   z-index: 9;
 }
 .partners__cards-item-third {
-  position: absolute;
+  position: relative;
   inset: 0;
   z-index: 8;
   transform: rotate(2.62deg);

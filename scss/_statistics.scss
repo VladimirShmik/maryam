@@ -341,7 +341,6 @@
 				font-size: 12px;
 			}
 			&-comment{
-				left: -115px;
 				&-wrapper{
 					width: 250px;
 				}
@@ -548,5 +547,10 @@
 				font-size: 14px;
 			}
 		}
+	}
+}
+@media (min-width: 320px) and (max-width: 767px){
+	.statistics__review-comment{
+		display: none;
 	}
 }

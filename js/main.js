@@ -178,8 +178,9 @@ new Swiper('.chairmanSlider', {
         }
     }
 })
-
+if ($('.datepicker').length) {
 $(".phone_mask").mask("+7(999)999-99-99");
+} else {}
 // Get the modal
 'use strict';
 
@@ -335,10 +336,23 @@ $.datepicker.regional['ru'] = {
     yearSuffix: ''
 };
 $.datepicker.setDefaults($.datepicker.regional['ru']);
-if ($('.lang-select').length) {
+if ($('.datepicker').length) {
     $(function(){
         $("#datepicker").datepicker({
         });
     });
 
 } else {}
+$(function() {
+    //caches a jQuery object containing the header element
+    var header = $(".partners__block");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 200) {
+            header.removeClass('clearHeader').addClass("darkHeader");
+        } else {
+            header.removeClass("darkHeader").addClass('clearHeader');
+        }
+    });
+});

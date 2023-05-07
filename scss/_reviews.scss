@@ -70,6 +70,10 @@
 		&-active {
 			border: 7px solid $white;
 			transform: scale(1.8);
+			@media (min-width: 320px) and (max-width: 1023px){
+				border: 5px solid $white;
+				transform: scale(1.5);
+			}
 		}
 		&-box {
 			display: flex;
@@ -223,7 +227,7 @@
 				flex-direction: column;
 			}
 			&-quotes{
-				top: 400px;
+				top: 450px;
 			}
 		}
 	}
