@@ -5207,19 +5207,23 @@ a.ui-button:active,
 .partners__cards-item-first {
   position: relative;
   inset: 0;
-  z-index: 10;
-  transform: rotate(-2.47deg);
-}
-.partners__cards-item-second {
-  position: relative;
-  inset: 0;
-  z-index: 9;
-}
-.partners__cards-item-third {
-  position: relative;
-  inset: 0;
   z-index: 8;
   transform: rotate(2.62deg);
+}
+.partners__cards-item-second {
+  position: absolute;
+  inset: 0;
+  z-index: 9;
+  transform: translate(0, 300px);
+  transition: 0.5s ease-in-out all;
+}
+.partners__cards-item-third {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  top: 0;
+  transform: rotate(-2.47deg) translate(0, 600px);
+  transition: 0.5s ease-in-out all;
 }
 .partners__cards-text {
   font-size: 18px;
@@ -5458,6 +5462,16 @@ a.ui-button:active,
 }
 .tabs-wrapper .content.active {
   display: block;
+}
+
+.scroll-to-block2 {
+  transition: 0.5s ease-in-out all;
+  transform: translate(0);
+}
+
+.scroll-to-block3 {
+  transition: 0.5s ease-in-out all;
+  transform: translate(0);
 }
 
 .stars-wrapper {

@@ -71,9 +71,38 @@ reviewBtns.forEach((btn, idx) => {
         reviewContents[idx].scrollIntoView({behavior: "smooth", block: "center"});
     });
 });
+// mapBtns.forEach((btn, idx) => {
+//     btn.addEventListener('click', () => {
+//         commentBlocks[idx].classList.add('statistics__review-comment-active');
+//
+//     });
+// });
+// Обработчик клика на кнопке
+function handleClick(event, button, comment) {
+    console.log(event, comment)
+    event.preventDefault(); // предотвращаем переход по ссылке
+
+    // Показываем окно комментариев
+    comment.classList.add('statistics__review-comment-active')
+
+    // Обработчик клика на странице
+    function handleDocumentClick(event) {
+        // Если клик произошел вне окна комментариев, закрываем его
+        if (!comment.contains(event.target) && !button.contains(event.target)) {
+            comment.classList.remove('statistics__review-comment-active')
+            document.removeEventListener('click', handleDocumentClick);
+
+        }
+    }
+
+    // Назначаем обработчик клика на странице, чтобы закрывать окно комментариев при клике вне его
+    document.addEventListener('click', handleDocumentClick);
+}
+
+// Назначаем обработчик клика на кнопке
 mapBtns.forEach((btn, idx) => {
-    btn.addEventListener('click', () => {
-        commentBlocks[idx].classList.toggle('statistics__review-comment-active');
+    btn.addEventListener('click', function (event) {
+        handleClick(event, btn, commentBlocks[idx])
     });
 });
 //swiper
@@ -356,3 +385,26 @@ $(function() {
         }
     });
 });
+const wrapper = document.querySelector(".partners");
+const block1 = document.querySelector(".partners__cards-item-first");
+const block2 = document.querySelector(".partners__cards-item-second");
+const block3 = document.querySelector(".partners__cards-item-third");
+
+const observer = new IntersectionObserver(callback);
+
+const observedElements = [block1, block2, block3];
+observedElements.forEach((element) => {
+    observer.observe(element);
+});
+
+function callback(entries) {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting && entry.target === block1) {
+            block1.classList.add("scroll-to-block1");
+        } else if (entry.isIntersecting && entry.target === block2) {
+            block2.classList.add("scroll-to-block2");
+        } else if (entry.isIntersecting && entry.target === block3) {
+            block3.classList.add("scroll-to-block3");
+        }
+    });
+}

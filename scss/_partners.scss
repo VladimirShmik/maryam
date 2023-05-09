@@ -43,21 +43,26 @@
       &-first {
         position: relative;
         inset: 0;
-        z-index: 10;
-        transform: rotate(-2.47deg);
+        z-index: 8;
+        transform: rotate(2.62deg) ;
+
       }
 
       &-second {
-        position: relative;
+        position: absolute;
         inset: 0;
         z-index: 9;
+        transform: translate(0, 300px);
+        transition: 0.5s ease-in-out all;
       }
 
       &-third {
-        position: relative;
+        position: absolute;
         inset: 0;
-        z-index: 8;
-        transform: rotate(2.62deg);
+        z-index: 10;
+        top: 0;
+        transform: rotate(-2.47deg) translate(0, 600px);
+        transition: 0.5s ease-in-out all;
       }
     }
 
@@ -335,4 +340,11 @@
     display: block;
   }
 }
-
+.scroll-to-block2{
+  transition: 0.5s ease-in-out all;
+  transform: translate(0);
+}
+.scroll-to-block3{
+  transition: 0.5s ease-in-out all;
+  transform: translate(0);
+}
